@@ -12,9 +12,9 @@
 body{
   background-color: var(--lightbg);
   color: var(--lighttext);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   transition: all 0.2s;
-  width: 100vw !important;
+  
  
 }
 
@@ -31,6 +31,7 @@ body{
   align-items: center;
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 .navbar{
@@ -132,6 +133,10 @@ body{
 
 .dark-theme .sidebar{
   background-color: #f8fafcee;
+}
+
+.heading{
+  overflow: hidden;
 }
 
 .heading .title{
