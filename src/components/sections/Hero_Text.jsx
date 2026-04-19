@@ -4,7 +4,7 @@ import Flip_Emoji from "./Flip_Emoji"
 function Hero_Text() {
   return (
     <>
-    <div className="heading pt-10 w-[90vw] xl:w-50 wrap p-5 gap-[3px] min-[600px]:ml-10 sm:mt-5 md:w-[50%] lg:w-[40%] md:-mt-[20px] lg:p-0 lg:gap-[5px] xl:w-[40%]">
+    <div className="heading pt-10 w-[90vw] xl:w-50 wrap p-5 gap-[3px] min-[600px]:ml-10 sm:mt-5 md:w-[50%] lg:w-[40%] md:-mt-[20px] lg:ml-0 lg:gap-[5px] lg:w-[55vw] xl:w-[50vw] relative">
       <div className="icons xl:text-[1.3rem] xl:mt-10">
         <Flip_Emoji emoji="🌐"/>
         <Flip_Emoji emoji="🚀" className="left-7 xl:text-[1.3rem]"/>

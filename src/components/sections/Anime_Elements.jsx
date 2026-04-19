@@ -24,8 +24,8 @@ function Anime_elements() {
   return (
     <>
     <div className="anime-div">
-    <img src={anime} ref={anime1} className="absolute w-20 max-[770px]:right-40 max-[770px]:bottom-50 md:left-10 md:top-10 max-[680px]:right-20 max-[460px]:w-15 max-[400px]:bottom-[220px]" alt="" />
-    <img src={c2} ref={anime2} className="absolute w-30 left-140 top-20 rotate-45 max-[1000px]:left-100 max-[770px]:left-140 max-[710px]:w-20 max-[670px]:left-120 max-[670px]:top-10 max-[580px]:left-100  max-[500px]:left-[73%] max-[460px]:w-15 max-[380px]:top-6"  alt="" />
+    <img src={anime} ref={anime1} className="gl absolute w-20 max-[770px]:right-40 max-[770px]:bottom-50 md:left-10 md:top-10 max-[680px]:right-20 max-[460px]:w-15 max-[400px]:bottom-[220px]" alt="" />
+    <img src={c2} ref={anime2} className="ggg absolute w-30 left-140 top-20 rotate-45 max-[1000px]:left-100 max-[770px]:left-140 max-[710px]:w-20 max-[670px]:left-120 max-[670px]:top-10 max-[580px]:left-100  max-[500px]:left-[73%] max-[460px]:w-15 max-[380px]:top-6"  alt="" />
     </div>
     </>
   )

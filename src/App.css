@@ -430,6 +430,154 @@ body{
   }
 }
 
+@media (width: 1024px) and (height: 1366px) {
+  .hero{
+    padding: 0px !important;
+  }
+  .heading{
+    width: 100% !important;
+    margin: 0px !important;
+    height: 600px;
+  }.globe{
+    width: 100vw !important;
+    margin: 0px !important;
+  }
+  .title{
+    text-align: center;
+    scale: 2.6 !important;
+    line-height: 50px !important;
+    margin-top: 40px !important;
+    width: 100% !important;
+  }
+  .icons{
+    margin-bottom: 20px;
+    margin-left: 35%;
+  }
+  .heading .text{
+    text-align: center;
+    margin-top: 30px !important;
+    font-size: 1.3rem !important;
+  }
+  .buttons{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 20px;
+    gap: 100px !important;
+  }
+  .buttons button{
+    scale 
+    : 1.5 !important;
+  }
+  .hero .globe{
+    margin-top: 100px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .globe img{
+    width: 70% !important;
+  }
+  .ggg{
+    left: 85% !important;
+  }
+  }
+
+@media (width: 820px) and (height: 1180px) {
+  .hero{
+    padding: 0px !important;
+  }
+  .heading{
+    width: 100% !important;
+    margin: 0px !important;
+  }.globe{
+    width: 100vw !important;
+    margin: 0px !important;
+  }
+  .title{
+    text-align: center;
+    scale: 1.5;
+  }
+  .icons{
+    margin-bottom: 20px;
+    margin-left: 35%;
+  }
+  .heading .text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3rem !important;
+  }
+  .buttons{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 20px;
+    gap: 100px !important;
+  }
+  .buttons button{
+    scale 
+    : 1.7;
+  }
+  .hero .globe{
+    margin-top: 100px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .globe img{
+    width: 70% !important;
+  }
+  .ggg{
+    left: 85% !important;
+  }
+  }
+
+@media (width: 768px) and (height: 1024px) {
+  .hero{
+    padding: 0px !important;
+  }
+  .heading{
+    width: 100% !important;
+    margin: 0px !important;
+  }.globe{
+    width: 100vw !important;
+    margin: 0px !important;
+  }
+  .title{
+    text-align: center;
+    scale: 1.5;
+  }
+  .icons{
+    margin-bottom: 20px;
+    margin-left: 35%;
+  }
+  .heading .text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3rem !important;
+  }
+  .buttons{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 20px;
+    gap: 100px !important;
+  }
+  .buttons button{
+    scale 
+    : 1.7;
+  }
+  .hero .globe{
+    margin-top: 100px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .globe img{
+    width: 70% !important;
+  }
+  }
+
 @media (max-width : 640px) {
   .sidebar.dark ul{
     font-size: 1rem;  }
@@ -477,5 +625,39 @@ body{
         width: 60vw !important;
   }
 }
+@media (min-width: 380px) and (min-height: 830px) {
+  .gl-img{
+    margin-top: -100px;
+  }
+  .hero{
+    padding: 0px;
+    height: 70vh !important;
+    gap: 20px !important;
+  }
+  .gl{
+    top: 30px !important;
+    left: 10px !important;
+
+  }
+}
+
+@media (min-width: 350px) and (min-height: 730px) {
+  .gl-img{
+    margin-top: -100px;
+  }
+  .hero{
+    padding: 0px;
+    height: 80vh !important;
+    gap: 20px !important;
+  }
+  .gl{
+    top: 30px !important;
+    left: 10px !important;
+  }
+  .title{
+    font-size: 1.8rem !important;
+  }
+}
+
 
 
