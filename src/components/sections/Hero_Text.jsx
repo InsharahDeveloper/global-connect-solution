@@ -4,7 +4,7 @@ function Hero_Text() {
   return (
     <>
     <div className="heading pt-10 wrap p-5 gap-[3px] min-[600px]:ml-10 sm:mt-5 md:w-[48vw] md:-mt-[20px] lg:ml-0 lg:gap-[5px] lg:w-[50vw] xl:w-[50vw] relative max-[306px]:-ml-5">
-        <div className="trust-bdg inline-flex flex-wrap items-center gap-2 px-4 py-2 rounded-full border border-gray-300 text-sm trust-badge -mb-8 max-[955px]:text-[.7rem] max-[765px]:mb-0 max-[500px]:px-2 max-[500px]:py-1 max-[500px]:text-[.5rem]">
+        <div className="trust-bdg inline-flex flex-wrap items-center gap-2 px-4 py-2 rounded-full border border-gray-300 text-sm trust-badge -mb-8 max-[955px]:text-[.7rem] max-[765px]:mb-0 max-[500px]:px-2 max-[500px]:py-1 max-[500px]:text-[.5rem] xl:mt-[50px]">
   <span>🌍 Trusted Globally</span>
   <span>|</span>
   <span>🔐 Safe Service</span>

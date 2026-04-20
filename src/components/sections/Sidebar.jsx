@@ -130,7 +130,7 @@ function Sidebar({ open, setOpen }) {
     <div ref={sidebarRef} className={`sidebar ${isDark ? "dark" : ""}`}>
       <div className="close m-5" onClick={() => setOpen(false)}>
         <button>
-          <X className="cursor-pointer" />
+          <X className="cursor-pointer cl" />
         </button>
       </div>
 
