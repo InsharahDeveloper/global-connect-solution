@@ -41,15 +41,15 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero p-0 w-[90vw] flex justify-between">
+    <div className="hero p-0 w-[90vw] flex ">
       {!isDark && <Anime_elements />}
       <Hero_Text/>
-      <div className="globe w-[90vw] mr-0 mt-10 md:mt-0 md:mr-20 flex items-center justify-center md:w-[30%] lg:w-[30%] xl:w-[36%]">
+      <div className="globe w-[90vw] mr-0 mt-10 md:mt-0 md:mr-20 flex items-center justify-center md:w-[25%] lg:w-[30%] xl:w-[36%]">
       <img
         ref={boxRef}
         src={isDark ? darkImg : lightImg}
         alt="hero"
-        className="w-[80%] gl-img"
+        className="w-[80%] gl-img md:w-[100%]"
       />
       </div>
     </div>

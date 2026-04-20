@@ -115,7 +115,6 @@ body{
 .hero > .heading{
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .sidebar{
@@ -141,13 +140,11 @@ body{
 
 .heading .title{
   color: var(--lighttext);
-  width: 600px;
   font-weight: bolder;
 }
 
 .dark-theme .heading .title{
   color: var(--darktext);
-  width: 600px;
   font-weight: bolder;
 }
 
@@ -424,6 +421,19 @@ body{
 .sidebar.dark .close:hover{
   background-color: var(--primarybg);
 }
+.trust-badge{
+  color: #95a7b8;
+  width: fit-content;
+}
+
+
+
+
+
+
+
+
+
 @media (max-width : 1025px),(min-width : 800px) {
   .sidebar.dark .social-icons{
     font-size: 1rem !important;
@@ -444,10 +454,14 @@ body{
   }
   .title{
     text-align: center;
-    scale: 2.6 !important;
-    line-height: 50px !important;
-    margin-top: 40px !important;
-    width: 100% !important;
+    scale: 1.5;
+  }
+  .trust-bdg{
+    margin: 12px auto;
+  }
+  .title span{
+    scale: .8 !important;
+    margin-top: -20px !important;
   }
   .icons{
     margin-bottom: 20px;
@@ -483,6 +497,63 @@ body{
   }
   }
 
+  @media (width: 912px) and (height: 1368px) {
+  .hero{
+    padding: 0px !important;
+  }
+  .heading{
+    width: 100% !important;
+    margin: 0px !important;
+    height: 600px;
+  }.globe{
+    width: 100vw !important;
+    margin: 0px !important;
+  }
+  .title{
+    text-align: center;
+    scale: 1.8;
+  }
+  .trust-bdg{
+    margin: 12px auto;
+  }
+  .title span{
+    scale: .8 !important;
+    margin-top: -20px !important;
+  }
+  .icons{
+    margin-bottom: 20px;
+    margin-left: 35%;
+  }
+  .heading .text{
+    text-align: center;
+    margin-top: 30px !important;
+    font-size: 1.3rem !important;
+  }
+  .buttons{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 20px;
+    gap: 100px !important;
+  }
+  .buttons button{
+    scale 
+    : 1.5 !important;
+  }
+  .hero .globe{
+    margin-top: -60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .globe img{
+    width: 70% !important;
+  }
+  .ggg{
+    left: 85% !important;
+  }
+  }
+
 @media (width: 820px) and (height: 1180px) {
   .hero{
     padding: 0px !important;
@@ -497,6 +568,14 @@ body{
   .title{
     text-align: center;
     scale: 1.5;
+    margin-top: 50px !important;
+  }
+  .trust-bdg{
+    margin: auto;
+  }
+  .title span{
+    scale: .8 !important;
+    margin-top: -20px !important;
   }
   .icons{
     margin-bottom: 20px;
@@ -546,6 +625,14 @@ body{
   .title{
     text-align: center;
     scale: 1.5;
+    margin-top: 50px !important;
+  }
+  .trust-bdg{
+    margin: auto;
+  }
+  .title span{
+    scale: .8 !important;
+    margin-top: -20px !important;
   }
   .icons{
     margin-bottom: 20px;
@@ -578,6 +665,148 @@ body{
   }
   }
 
+  @media (width: 344px) and (height: 882px) {
+  .hero{
+    padding: 0px !important;
+  }
+  .heading{
+    width: 100% !important;
+    margin: 0px !important;
+  }.globe{
+    width: 100vw !important;
+    margin: 0px !important;
+  }
+  .title{
+    text-align: center;
+    scale: 1.5;
+    margin-top: 50px !important;
+  }
+  .trust-bdg{
+    margin: -30px auto !important;
+  }
+  .ggg{
+    top : 16px !important;
+  }
+  .gl{
+    bottom : 300px !important;
+  }
+  .title span{
+    scale: 1 !important;
+    margin-top: -5px !important;
+  }
+  .heading .text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem !important;
+  }
+  .buttons{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 20px;
+    gap: 20px !important;
+  }
+  .buttons button{
+    scale : 1.2;
+  }
+  .hero .globe{
+    margin-top: -80px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .globe img{
+    width: 70% !important;
+  }
+  }
+
+    @media (width: 853px) and (height: 1280px) {
+  .hero{
+    padding: 0px !important;
+  }
+  .heading{
+    width: 100% !important;
+    margin: 0px !important;
+  }.globe{
+    width: 100vw !important;
+    margin: 0px !important;
+  }
+  .title{
+    text-align: center;
+    scale: 1.5;
+    margin-top: 50px !important;
+  }
+  .trust-bdg{
+    margin: -30px auto !important;
+  }
+  .ggg{
+    top : 16px !important;
+  }
+  .gl{
+    bottom : 300px !important;
+  }
+  .title span{
+    scale: 1 !important;
+    margin-top: -5px !important;
+  }
+  .heading .text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem !important;
+  }
+  .buttons{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 20px;
+    gap: 20px !important;
+  }
+  .buttons button{
+    scale : 1.2;
+  }
+  .hero .globe{
+    margin-top: -30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .globe img{
+    width: 70% !important;
+  }
+  }
+  @media (width: 1024px) and (height: 600px) {
+    .gl{
+      top: 0px !important;
+    }
+    .trust-bdg{
+      margin-top: 50px !important;
+    }
+  }
+  @media (width: 1280px) and (height: 800px) {
+    .heading{
+      width: 45vw !important;
+    }
+    .title{
+      scale: 2;
+      padding-left: 130px !important;
+      margin-top: 70px !important;
+    }
+    .title span{
+      scale: .5 !important;
+      margin-left: -80px !important;
+      margin-top: -30px !important;
+    }
+  }
+   @media (width: 320px) and (height: 480px) {
+    .gl{
+      bottom: 100px !important;
+    }
+  }
+   @media (width: 320px) and (height: 568px) {
+    .gl{
+      bottom: 180px !important;
+    }
+  }
 @media (max-width : 640px) {
   .sidebar.dark ul{
     font-size: 1rem;  }
