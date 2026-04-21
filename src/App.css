@@ -1,7 +1,7 @@
 :root{
   --darkbg : #083055;
-  --darktext : #F8FAFC;
-  --lightbg : #F8FAFC;
+  --darktext : #eff6ff;
+  --lightbg : #eff6ff;
   --lighttext : #083055;
   --primarytext : rgb(255, 145, 0);
   --primarybg : rgb(255, 145, 0);
@@ -14,8 +14,8 @@ body{
   color: var(--lighttext);
   /* overflow-x: hidden; */
   transition: all 0.2s;
+  position: relative;
   
- 
 }
 
 .dark-theme{
@@ -29,9 +29,13 @@ body{
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  position: relative;
   height: 100%;
   width: 100%;
+  /* background-image: url("./assets/herosection/light-bg2.jpg"); */
+  /* background-size: cover;
+  background-position: center;
+  background-color: #8faabe;
+background-blend-mode: overlay; */
 }
 
 .navbar{
@@ -41,7 +45,7 @@ body{
   box-shadow: -15px 15px 20px var(--lightshadow);
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: sticky !important;
   top: 5px;
   z-index: 80;
 }
@@ -148,15 +152,11 @@ body{
   font-weight: bolder;
 }
 
-.heading .text{
-  color: #6b7c8d;
-}
-
 .dark-theme .heading .text{
   color: #c5d3e0;
 }
 
-.heading .buttons button{
+.buttons button{
   border-radius: 50px;
   color: var(--darktext);
   font-weight: 600;
@@ -165,7 +165,7 @@ body{
   transition: 0.5s;
 }
 
-.dark-theme .heading .buttons button{
+.dark-theme .buttons button{
   color: var(--lighttext);
 }
 .wa_me{
@@ -179,7 +179,7 @@ body{
   background-color: var(--lightbg);
 }
 
-.heading .buttons .wa_me::before{
+.buttons .wa_me::before{
   content: "";
   position: absolute;
   width: 100%;
@@ -191,11 +191,11 @@ body{
   border-radius: 50%;
 }
 
-.dark-theme .heading .buttons .wa_me::before{
+.dark-theme .buttons .wa_me::before{
   background-color: var(--lightbg);
 }
 
-.heading .buttons .e-services::before{
+.buttons .e-services::before{
   content: "";
   position: absolute;
   width: 100%;
@@ -207,13 +207,13 @@ body{
   border-radius: 50%;
 }
 
-.heading .buttons button:hover::before{
+.buttons button:hover::before{
   left: 0px;
   border-radius: 0px;
 
 }
 
-.heading .buttons button:hover{
+.buttons button:hover{
     box-shadow: 0px 0px 30px 2px #1f4e79b0;
     cursor: pointer;
 
@@ -266,6 +266,9 @@ body{
   border-radius: 20px;
   background-color: var(--primarybg);
   cursor: pointer;
+}
+.why-choose .text{
+    color: #7e94aa;
 }
 
 .toggle_div .toggle-btn{
@@ -425,9 +428,163 @@ body{
   color: #95a7b8;
   width: fit-content;
 }
+.carousel {
+  margin: 0px auto;
+  width: 100%;
+  display: flex;
+  overflow: hidden; /* Scrollbar ki zaroorat nahi */
+  white-space: nowrap;
+  background-color: var(--darkbg);
+  color: var(--darktext);
+  cursor: text;
+  font-weight: 600;
+  position: relative;
+}
 
+.dark-theme .carousel {
+  background-color: var(--lightbg);
+  color: var(--lighttext);
+}
 
+.carousel .group {
+  display: flex;
+  flex-shrink: 0; /* Bohat zaroori: Taake group chota na ho */
+  min-width: 100%; /* Har group container ki poori width le */
+  justify-content: space-around; /* Ya barabar spacing */
+}
 
+.carousel .card {
+  height: 2em;
+  padding: 0 1em; /* Margin/Gap ki jagah padding use karein */
+  font-size: 1.5rem;
+  border-radius: .2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.why-choose .buttons button{
+  padding: 10px 20px;
+}
+.c-card{
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.c-card::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  background-color: var(--primarybg);
+  transition: all 0.8s ease;
+  border-radius: 50px;
+  z-index: -1;
+}
+.c-card:hover::before{
+  left: 0px;
+  border-radius: 0px;
+}
+.c-card:hover{
+    color: var(--darktext);
+
+}
+.c-card p{
+  transition: all 0.5s ease;
+
+}
+.c-card:hover p{
+  color: #e2eefa !important;
+}
+.service-div{
+  border-top: 1px solid rgb(199, 199, 199);
+
+}
+.dark-theme .service-div{
+  border-top: 1px solid rgb(93, 114, 172);
+}
+
+.service-div .c-card:hover button{
+  background-color: var(--lightbg);
+  color: var(--lighttext);
+}
+
+.service-div .c-card button{
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.service-div .c-card button::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: -100%;
+  position: absolute;
+  transition: all 0.8s ease;
+  z-index: -1;
+  background-color: var(--lighttext);
+  border-radius: 20px;
+
+}
+
+.service-div .c-card button:hover::before{
+  left: 0px;
+  border-radius: 0px;
+}
+
+.service-div .c-card button:hover{
+  cursor: pointer;
+  background-color: none !important;
+  color: var(--darktext);
+  scale: 1.1;
+}
+.see-more{
+  background-color: var(--primarybg);
+}
+.see-more h3{
+  color: var(--lighttext);
+  transition: all .3s;
+}
+.see-more p{
+  color: var(--darktext);
+}
+.see-more button{
+  color: var(--lighttext);
+  background-color: var(--lightbg);
+}
+.see-more::before{
+  background-color: var(--darkbg);
+}
+.see-more:hover h3{
+  color: var(--primarytext);
+}
+.see-more:hover {
+  border: none;
+}
+.see-more:hover button{
+  border: none;
+}
+.see-more button:hover::before{
+  background-color: var(--primarybg);
+}
+.dark-theme .see-more::before{
+  background-color: var(--lightbg);
+}
+.dark-theme .see-more:hover p{
+  color: var(--lighttext) !important;
+}
+.dark-theme .see-more:hover button{
+  background-color: var(--primarybg);
+}
+.dark-theme .see-more button:hover::before{
+  background-color: var(--lighttext);
+  color: var(--primarybg);
+}
 
 
 
@@ -447,10 +604,15 @@ body{
   .heading{
     width: 100% !important;
     margin: 0px !important;
+    margin-top: 100px !important;
     height: 600px;
   }.globe{
     width: 100vw !important;
-    margin: 0px !important;
+    position: relative;
+    bottom: 200px !important;
+  }
+  .carousel{
+    margin-top: 70px !important;
   }
   .title{
     text-align: center;
@@ -612,6 +774,9 @@ body{
   }
 
 @media (width: 768px) and (height: 1024px) {
+  .carousel{
+    margin-top: 100px;
+  }
   .hero{
     padding: 0px !important;
   }
@@ -797,16 +962,42 @@ body{
       margin-top: -30px !important;
     }
   }
-   @media (width: 320px) and (height: 480px) {
+   @media (min-width: 320px) and (max-width : 380px) and (min-height: 560px) and (max-height: 670px) {
     .gl{
-      bottom: 100px !important;
+      bottom: 41% !important;
+    }
+    .carousel{
+      margin-top: 50px !important;
+    }
+    .carousel .card{
+      font-size: .8rem !important;
     }
   }
-   @media (width: 320px) and (height: 568px) {
+  @media (width: 540px) and (height: 720px){
+    .carousel{
+      margin-top: 100px !important;
+    }
     .gl{
-      bottom: 180px !important;
+      top: 250px;
     }
   }
+  @media (width: 320px) and (height: 480px){
+    .carousel{
+      margin-top: 170px !important;
+    }
+    .carousel .card{
+      font-size: 1rem !important;
+    }
+    .gl{
+      top: 60%;
+    }
+  }
+
+@media (max-width : 766px) {
+  .carousel{
+    margin-top: 450px !important;
+  }
+}
 @media (max-width : 640px) {
   .sidebar.dark ul{
     font-size: 1rem;  }
@@ -815,6 +1006,9 @@ body{
 @media (max-width : 620px) {
   .sidebar{
     width: 30vw;
+  }
+  .carousel{
+    margin-top: 250px !important;
   }
 }
 
@@ -829,20 +1023,45 @@ body{
     width: 45vw;
   }
 }
-@media (max-width : 410px) {
+@media (max-width : 430px) {
   .sidebar{
     width: 50vw;
+  }
+  .carousel{
+    margin-top: 150px !important;
+  }
+  .carousel .card{
+    font-size: .9rem !important;
   }
 }
 @media (max-width : 370px) {
   .sidebar ul{
     margin-left: 5px !important;
   }
+  .carousel{
+    margin-top: 50px;
+    font-size: 1rem !important;
+  }
+  .buttons button{
+    padding: 6px 12px !important;
+    margin: 0px !important;
+    border: 2px solid !important;
+  }
+  .hero .buttons{
+    margin-top: 20px !important;
+  }
+  .buttons{
+    gap: 10px !important;
+    margin: 0px !important;
+  }
 }
 @media (max-width : 340px) {
   .sidebar ul{
     margin-left: 5px !important;
     font-size: 0.9rem !important;
+  }
+  .carousel{
+    margin-top: 10px !important;
   }
 }
 @media (max-width : 320px) {
@@ -852,6 +1071,9 @@ body{
   }
   .sidebar{
         width: 60vw !important;
+  }
+  .buttons{
+    gap: 5px !important;
   }
 }
 @media (min-width: 380px) and (min-height: 830px) {
@@ -960,6 +1182,111 @@ body{
         }
         .ggg{
           width: 250px !important;
+          top: 80% !important;
+          left: 45% !important;
+        }
+        .sidebar ul{
+          font-size: 3rem !important;
+        }
+        .social-icons{
+          font-size: 3rem !important;
+          width: fit-content !important;
+        }
+        .sidebar.dark .social-icons{
+          font-size: 3rem !important;
+        }
+        .sidebar .social-icons div{
+          width: 70px;
+          height: 70px !important;
+        }
+        .trust-bdg{
+          margin-top: 100px !important;
+        }
+        .cl{
+          width: 40px !important;
+          height: 40px !important;
+        }
+        .why-choose{
+          padding: 70px 100px ;
+          border: 2px solid;
+        }
+        .why-choose h1{
+          font-size: 5rem;
+        }
+        .why-choose .left p{
+          font-size: 2rem;
+          line-height: 50px;
+        }
+        .why-choose .c-card h3{
+          font-size: 2.1rem;
+        }
+        .why-choose .c-card p{
+          font-size: 1.6rem;
+        }
+       }
+
+@media (min-width: 1240px) and 
+       (max-width: 1600px) and
+       (min-height: 660px) and
+       (max-height: 1090px){
+        .heading{
+          width: 50% !important;
+
+        }
+        .globe{
+          justify-self: center !important;
+          width: 38% !important;
+          height: fit-content !important;
+          margin-top: 90px !important;
+        }
+        .title{
+          font-size: 3.5rem !important;
+          scale: 1 !important;
+          padding: 0px !important;
+          margin-top: 40px !important;
+        }
+        .title span{
+          font-size: 3.2rem !important;
+          scale: 1 !important;
+        }
+        .trust-bdg{
+          font-size: 1.3rem !important;
+        }
+        .text{
+          font-size: 1.2rem !important;
+        }.navbar{
+          height: 12vh !important;
+          padding: 10px 50px !important;
+        }
+        .navbar .menu_icon{
+          width: 80px !important;
+          height: 80px !important;
+        }
+        .buttons button{
+          font-size: 1.2rem !important;
+          padding: 10px 20px !important;
+        }
+        .logo_text{
+          font-size: 2.6rem !important;
+        }
+        .toggle_div{
+          border-radius: 100px !important;
+        }
+        .toggle_div div{
+          padding: 10px 20px !important;
+        }
+        .toggle{
+         width: 50px !important;
+         height: 50px !important;
+        }
+        .toggle-btn{
+          border-radius: 100px !important;
+        }
+        .gl{
+          width: 100px !important;
+        }
+        .ggg{
+          width: 120px !important;
           top: 80% !important;
           left: 45% !important;
         }

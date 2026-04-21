@@ -19,11 +19,11 @@ function Toggle() {
   return (
     <div className="toggle_div hidden sm:flex" onClick={handleToggle}>
       <div className="light">
-        <Sun className="toggle" />
+        <Sun className="toggle xl:w-[20px] xl:h-[20px]" />
       </div>
 
       <div className="dark">
-        <Moon className="toggle" />
+        <Moon className="toggle xl:w-[20px] xl:h-[20px]" />
       </div>
 
       <div className={darkMode ? "toggle-btn active" : "toggle-btn"}></div>

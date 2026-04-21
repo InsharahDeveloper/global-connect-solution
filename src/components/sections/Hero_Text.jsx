@@ -1,4 +1,5 @@
 import "../../App.css"
+import Buttons from "./Buttons"
 
 function Hero_Text() {
   return (
@@ -11,12 +12,9 @@ function Hero_Text() {
   <span>|</span>
   <span>⚡ Fast Support</span>
 </div>
-        <h1 className="title font-[Montserrat] text-[1.3rem] min-[356px]:text-[1.9rem] sm:text-[3rem] md:text-[2.5rem] lg:text-[3.3rem] xl:text-[3.5rem] md:mt-4">Powering Your <span className="fot-[Inter] block -mt-2 lg:-mt-5 text-[1.1rem] min-[356px]:text-[1.6rem] sm:text-[2.8rem] md:text-[2.4rem] lg:text-[3rem] xl:text-[3.2rem]"><span className="orange">Global</span> Connectivity</span> </h1>
-        <p className="text font-[Inter] text-[.9rem] sm:text-[1.1rem] w-[100%] pr-4 md:text-[.9rem] xl:text-[1.2rem]">Premium Google Voice, Gmail, eSIM & Digital Services trusted by clients worldwide.</p>
-        <div className="buttons flex wrap lg:mt-5">
-            <button className="m-2 font-[Inter] e-services text-[.6rem] min-[400px]:text-[.8em] min-[400px]:px-4 px-2 py-2 sm:text-[1rem] sm:px-4 sm:py-3 md:text-[.7rem] lg:text-[1rem] lg:px-5 lg:py-4"><div className="btn_text relative">Explore Services</div></button>
-            <button className="m-2 font-[Inter] wa_me text-[.6rem] px-2 min-[400px]:text-[.8em] min-[400px]:px-4 py-2 sm:text-[1rem] sm:px-4 sm:py-3 md:text-[.7rem] lg:text-[1rem] lg:px-5 lg:py-4"><div className="btn_text relative">Chat On Whatsapp</div></button>
-        </div>
+        <h1 className="title font-[Montserrat] text-[1.3rem] min-[356px]:text-[1.9rem] sm:text-[3rem] md:text-[2.5rem] lg:text-[3.3rem] xl:text-[3.5rem] md:mt-8">Powering Your <span className="fot-[Inter] block -mt-2 lg:-mt-5 text-[1.1rem] min-[356px]:text-[1.6rem] sm:text-[2.8rem] md:text-[2.4rem] lg:text-[3rem] xl:text-[3.2rem]"><span className="orange">Global</span> Connectivity</span> </h1>
+        <p className="text font-[Inter] text-[.9rem] sm:text-[1.1rem] w-[100%] pr-4 md:text-[.9rem] xl:text-[1.2rem] text-gray-400">Premium Google Voice, Gmail, eSIM & Digital Services trusted by clients worldwide.</p>
+        <Buttons />
     </div>
     </>
   )

@@ -29,7 +29,7 @@ function Logo() {
     <div className="logo">
       <img src={darkMode ? darklogo : lightlogo} alt="logo" />
 
-      <div className="logo_text font-[Poppins] -ml-2 text-base flex flex-col sm:flex-row sm:text-xl md:text-2xl xl:text-[2rem] xl:ml-2">
+      <div className="logo_text font-[Poppins] -ml-2 text-base flex flex-col sm:flex-row sm:text-xl md:text-2xl xl:text-[1.5rem] xl:ml-[1px]">
         Global <span className="orange -m-3 ml-4 sm:m-0">Connect</span> <span className="">Solution</span>
       </div>
     </div>

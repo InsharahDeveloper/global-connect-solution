@@ -1,6 +1,5 @@
 import "../../App.css";
-import lightImg from "../../assets/herosection/1776432613739.jpg";
-import darkImg from "../../assets/herosection/dark-global.png";
+import lightImg from "../../assets/herosection/org-globe.png";
 
 import Hero_Text from "./Hero_Text";
 import Anime_elements from "./Anime_Elements";
@@ -47,7 +46,7 @@ function Hero() {
       <div className="globe w-[90vw] mr-0 mt-10 md:mt-0 md:mr-20 flex items-center justify-center md:w-[25%] lg:w-[30%] xl:w-[36%]">
       <img
         ref={boxRef}
-        src={isDark ? darkImg : lightImg}
+        src={lightImg}
         alt="hero"
         className="w-[80%] gl-img md:w-[100%]"
       />
