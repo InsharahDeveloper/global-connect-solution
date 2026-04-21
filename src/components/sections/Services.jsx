@@ -76,7 +76,7 @@ function Services() {
             className="group c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition"
           >
             {/* Icon */}
-            <div className="text-orange-400 mb-4 group-hover:text-blue-900 transition duration-[1.6s]">
+            <div className="text-orange-400 icon mb-4 group-hover:text-blue-900 transition duration-[1.6s]">
               {service.icon}
             </div>
 

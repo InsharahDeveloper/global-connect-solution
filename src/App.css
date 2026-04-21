@@ -506,6 +506,10 @@ background-blend-mode: overlay; */
   border-top: 1px solid rgb(93, 114, 172);
 }
 
+.service-div .c-card:hover .icon{
+  color: var(--darkbg);
+}
+
 .service-div .c-card:hover button{
   background-color: var(--lightbg);
   color: var(--lighttext);
@@ -585,6 +589,7 @@ background-blend-mode: overlay; */
   background-color: var(--lighttext);
   color: var(--primarybg);
 }
+
 
 
 
