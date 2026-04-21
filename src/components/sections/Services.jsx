@@ -9,6 +9,8 @@ import {
   TvMinimalPlay,
   ArrowRight,
 } from "lucide-react";
+import "../../App.css"
+
 
 function Services() {
   const services = [
@@ -55,21 +57,21 @@ function Services() {
   ];
 
   return (
-    <section className="w-full py-16 px-6 md:px-20 border-t-2 service-div relative">
+    <section className="w-full py-16 px-6 md:px-20 service-div relative mt-[50px]">
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold">
+        <h2 className="text-3xl md:text-5xl font-bold font-[Poppins] sec-title">
           Our <span className="orange">Services</span>
         </h2>
 
-        <p className="text-gray-400 mt-3 text-[1.2rem] max-w-2xl mx-auto">
+        <p className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto sec-desc">
           Your trusted partner for premium digital accounts, Google Voice (GV),
           VoIP services, and global communication solutions.
         </p>
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center ">
+      <div className="grid mt-[80px] grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center ">
         {services.map((service, index) => (
           <div
             key={index}

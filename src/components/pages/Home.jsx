@@ -6,6 +6,8 @@ import Carousel from "../sections/Carousel"
 import { useState } from "react";
 import WhyChoose from "../sections/WhyChoose"
 import Services from "../sections/Services"
+import JoinUs from "../sections/JoinUs"
+import HowItWorks from "../sections/HowItWorks"
 
 function Home() {
   const [open, setOpen] = useState(false);
@@ -21,6 +23,8 @@ function Home() {
     <Carousel />
     <WhyChoose />
     <Services />
+    <JoinUs />
+    <HowItWorks />
     </div>
     </>
   )
