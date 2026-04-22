@@ -1,33 +1,42 @@
+// Toggle.jsx
 import { useState } from "react";
 import { Moon, Sun } from "lucide-react";
-import "../../App.css";
 
 function Toggle() {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleToggle = () => {
-    const newMode = !darkMode;
-    setDarkMode(newMode);
-
-    // toggle body class properly
-    document.body.classList.toggle("dark-theme", newMode);
-
-    // notify all components
-    window.dispatchEvent(new Event("themeChange"));
+    const mode = !darkMode;
+    setDarkMode(mode);
+    document.body.classList.toggle("dark-theme", mode);
   };
 
   return (
-    <div className="toggle_div hidden sm:flex" onClick={handleToggle}>
-      <div className="light">
-        <Sun className="toggle xl:w-[20px] xl:h-[20px]" />
-      </div>
+    <>
+    <div
+      onClick={handleToggle}
+      className="flex max-[421px]:hidden relative w-16 h-8 bg-gray-200 rounded-full cursor-pointer items-center px-1 tgl lg:mx-10 "
+    >
+      <Sun className=" w-4 h-4 text-orange-400" />
+      <Moon className=" w-4 h-4 ml-auto text-blue" />
 
-      <div className="dark">
-        <Moon className="toggle xl:w-[20px] xl:h-[20px]" />
-      </div>
-
-      <div className={darkMode ? "toggle-btn active" : "toggle-btn"}></div>
+      <div
+        className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-all duration-300 ${
+          darkMode ? "left-9" : "left-1"
+        }`}
+      ></div>
     </div>
+      <div
+        onClick={handleToggle}
+        className="flex min-[421px]:hidden cursor-pointer bg-orange-400 p-1 rounded-full max-[370px]:mx-1 "
+      >
+        {darkMode ? (
+          <Sun className="w-5 h-5" />
+        ) : (
+          <Moon className="w-5 h-5" />
+        )}
+      </div>
+    </>
   );
 }
 

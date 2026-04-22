@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
     <div className="main">
-    <div className="home">
+    <div className="home relative">
     <Navbar setOpen={setOpen}/>
     <Hero />
     <Sidebar open={open} setOpen={setOpen}/>

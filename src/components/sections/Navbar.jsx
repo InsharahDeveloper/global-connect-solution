@@ -1,18 +1,24 @@
-import "../../App.css"
-import {Logs} from "lucide-react"
-import Toggle from "./Toggle"
-import Logo from "./Logo"
+// Navbar.jsx
+import "../../App.css";
+import { Logs } from "lucide-react";
+import Toggle from "./Toggle";
+import Logo from "./Logo";
 
-function Navbar({setOpen}) {
+function Navbar({ setOpen }) {
   return (
-    <>
-    <nav className="navbar mt-2 px-6 sm:px-8 h-[10vh] min-[200px]:w-[94%] sm:mt-5 sm:h-[12vh] md:h-[12vh] sm:w-[96%]">
-      <Logo/>
-      <Toggle />
-      <div className="menu flex items-center"><Logs className="menu_icon w-10 h-10" onClick={() => setOpen(true)}/></div>
+    <nav className="w-[95%] navbar fixed top-1 max-[315px]:px-2 px-5 sm:px-6 md:px-8 lg:px-12 lg:w-[98%] py-2 lg:py-3 flex justify-between items-center">
+      <Logo />
+
+      <div className="flex items-center gap-4">
+        <Toggle />
+
+        <Logs
+          className="w-8 h-8 cursor-pointer menu-icon hover:text-orange-400 action:scale-[1.1]"
+          onClick={() => setOpen(true)}
+        />
+      </div>
     </nav>
-    </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

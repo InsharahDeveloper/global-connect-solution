@@ -31,11 +31,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  /* background-image: url("./assets/herosection/light-bg2.jpg"); */
-  /* background-size: cover;
-  background-position: center;
-  background-color: #8faabe;
-background-blend-mode: overlay; */
+  padding-top: 10vh;
 }
 
 .navbar {
@@ -45,15 +41,19 @@ background-blend-mode: overlay; */
   box-shadow: -15px 15px 20px var(--lightshadow);
   justify-content: space-between;
   align-items: center;
-  position: sticky !important;
-  top: 5px;
   z-index: 80;
+  color: var(--darktext);
 }
 
 .dark-theme .navbar {
   background-color: var(--lightbg);
   display: flex;
   box-shadow: -15px 15px 20px var(--darkshadow);
+  color: var(--lighttext);
+}
+
+.dark-theme .tgl{
+  background-color: var(--darkbg);
 }
 
 .navbar>.logo {
@@ -87,23 +87,13 @@ background-blend-mode: overlay; */
   color: var(--primarytext);
 }
 
-.navbar .menu {
-  height: 100%;
-  color: var(--darktext);
-}
-
-.dark-theme .navbar .menu {
-  height: 100%;
-  color: var(--lighttext);
-}
-
-.navbar .menu_icon {
+.navbar .menu-icon {
   position: relative;
   z-index: 3;
   transition: all .3s;
 }
 
-.navbar .menu_icon:hover {
+.navbar .menu-icon:hover {
   cursor: pointer;
 }
 
@@ -152,6 +142,10 @@ background-blend-mode: overlay; */
 
 .dark-theme .heading .text {
   color: #c5d3e0;
+}
+
+.buttons{
+  width: fit-content;
 }
 
 .buttons button {
@@ -341,11 +335,7 @@ background-blend-mode: overlay; */
   scale: .9;
 }
 
-.menu_icon:hover {
-  color: var(--primarybg);
-}
-
-.menu_icon:active {
+.menu-icon:active {
   scale: .9;
 }
 
@@ -443,7 +433,6 @@ background-blend-mode: overlay; */
   width: 100%;
   display: flex;
   overflow: hidden;
-  /* Scrollbar ki zaroorat nahi */
   white-space: nowrap;
   background-color: var(--darkbg);
   color: var(--darktext);
@@ -1255,7 +1244,6 @@ background-blend-mode: overlay; */
 
   .buttons {
     gap: 10px !important;
-    margin: 0px !important;
   }
 }
 
@@ -1266,7 +1254,7 @@ background-blend-mode: overlay; */
   }
 
   .carousel {
-    margin-top: 10px !important;
+    margin-top: 80px !important;
   }
 }
 

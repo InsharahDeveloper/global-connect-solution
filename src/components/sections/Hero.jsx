@@ -1,8 +1,8 @@
-import "../../App.css";
-import lightImg from "../../assets/herosection/org-globe.png";
+// Hero.jsx
+// import "../../App.css";
+import lightImg from "../../assets/herosection/new-globe.png";
 
 import Hero_Text from "./Hero_Text";
-import Anime_elements from "./Anime_Elements";
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -13,18 +13,16 @@ function Hero() {
 
   useEffect(() => {
     gsap.to(boxRef.current, {
-      rotation: "+=360",
+      rotation: 360,
       duration: 50,
       repeat: -1,
       ease: "linear",
     });
   }, []);
 
-  // Check body class dark-theme
   useEffect(() => {
     const checkTheme = () => {
-      const dark = document.body.classList.contains("dark-theme");
-      setIsDark(dark);
+      setIsDark(document.body.classList.contains("dark-theme"));
     };
 
     checkTheme();
@@ -40,18 +38,25 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero p-0 w-[90vw] flex ">
-      {!isDark && <Anime_elements />}
-      <Hero_Text/>
-      <div className="globe w-[90vw] mr-0 mt-10 md:mt-0 md:mr-20 flex items-center justify-center md:w-[25%] lg:w-[30%] xl:w-[36%]">
-      <img
-        ref={boxRef}
-        src={lightImg}
-        alt="hero"
-        className="w-[80%] gl-img md:w-[100%]"
-      />
+    <section className="hero w-full max-[320px]:px-2 px-8 sm:px-20 md:px-12 lg:px-20 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
+        {/* Left Side */}
+        <div className=" relative">
+          <Hero_Text />
+        </div>
+
+        {/* Right Side */}
+        <div className=" flex justify-center items-center">
+          <img
+            ref={boxRef}
+            src={lightImg}
+            alt="Globe"
+            className="w-[75%] sm:w-[65%] md:w-[90%] lg:w-[80%] xl:w-[75%]"
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

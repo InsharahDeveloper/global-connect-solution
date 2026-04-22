@@ -5,7 +5,6 @@ function Carousel() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    // GSAP Context use karein taake React double-render na kare
     let ctx = gsap.context(() => {
       const groups = containerRef.current.querySelectorAll(".group");
 
@@ -46,7 +45,6 @@ function Carousel() {
         <div className="card"><i class="ri-global-line mr-2"></i> Global Reach</div>
         <div className="card">|</div>
       </div>
-      {/* Duplicate Group: Exactly same content */}
       <div className="group" aria-hidden="true">
         <div className="card"><i class="ri-verified-badge-line mr-2"></i> Trusted Worldwide</div>
         <div className="card">|</div>
