@@ -38,21 +38,21 @@ function Hero() {
   }, []);
 
   return (
-    <section className="hero w-full max-[320px]:px-2 px-8 sm:px-20 md:px-12 lg:px-20 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="hero w-full max-[320px]:px-2 px-8 sm:px-20 lg:px-20 py-10 max-[913px]:px-0 ">
+      <div className="grid w-full grid-cols-1 min-[860px]:grid-cols-2 min-[911px]:grid-cols-1 min-[913px]:grid-cols-2 gap-10 items-center">
         
         {/* Left Side */}
-        <div className=" relative">
+        <div className="relative">
           <Hero_Text />
         </div>
 
         {/* Right Side */}
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center max-[913px]:w-[80%] max-[913px]:mx-auto ">
           <img
             ref={boxRef}
             src={lightImg}
             alt="Globe"
-            className="w-[75%] sm:w-[65%] md:w-[90%] lg:w-[80%] xl:w-[75%]"
+            className="w-[75%] sm:w-[65%] lg:w-[80%] xl:w-[75%]"
           />
         </div>
       </div>

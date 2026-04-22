@@ -48,12 +48,7 @@ function Services() {
       icon: <CardSim size={28} />,
       title: "eSIM Services",
       desc: "CK eSIM solutions for fast and secure mobile connectivity.",
-    },
-    {
-      icon: <Shield size={28} />,
-      title: "Warranty & Support",
-      desc: "3-5 days SMS warranty, 24-hour replacement, and trusted support system.",
-    },
+    }
   ];
 
   return (
@@ -71,7 +66,7 @@ function Services() {
       </div>
 
       {/* Grid */}
-      <div className="grid mt-[80px] grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center ">
+      <div className="grid mt-[80px] grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 justify-center ">
         {services.map((service, index) => (
           <div
             key={index}

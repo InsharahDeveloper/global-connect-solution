@@ -34,7 +34,7 @@ function Carousel() {
   }, []);
 
   return (
-    <div className="carousel" ref={containerRef}>
+    <div className="carousel relative" ref={containerRef}>
       <div className="group">
         <div className="card"><i class="ri-verified-badge-line mr-2"></i> Trusted Worldwide</div>
         <div className="card">|</div>
