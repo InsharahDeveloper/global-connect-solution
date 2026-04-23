@@ -1,4 +1,4 @@
-import { useEffect, useState ,useRef} from "react";
+import { useEffect, useState, useRef } from "react";
 import bg from "../../assets/herosection/org-bg.png"
 import "../../App.css"
 
@@ -37,7 +37,7 @@ function JoinUs() {
     let p = 0;
 
     const interval = setInterval(() => {
-      if (c < 250) c += 5;
+      if (c < 1000) c += 20;
       if (s < 50) s += 1;
       if (p < 100) p += 2;
 
@@ -45,7 +45,7 @@ function JoinUs() {
       setServices(s);
       setSuccess(p);
 
-      if (c >= 250 && s >= 50 && p >= 100) {
+      if (c >= 1000 && s >= 50 && p >= 100) {
         clearInterval(interval);
       }
     }, 30);
@@ -55,7 +55,7 @@ function JoinUs() {
 
   return (
     <section
-    ref={sectionRef}
+      ref={sectionRef}
       className="w-full min-h-[80vh] bg-cover bg-center bg-no-repeat grid items-center relative p-8 md:px-20 join-us"
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -66,41 +66,44 @@ function JoinUs() {
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 gap-8 items-center w-full">
 
         <div className="text-center pt-20">
-          <p className="text-orange-400 uppercase tracking-[4px] js font-bold mb-1">
+          <p data-aos="zoom-in" className="text-orange-400 uppercase tracking-[4px] 2xl:text-3xl font-bold mb-1">
             Join Us
           </p>
 
-          <h2 className="text-3xl md:text-5xl font-[Poppins] font-bold leading-tight mb-3 text-white sec-title">
+          <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-[Poppins] font-bold leading-tight mb-3 text-white 2xl:text-6xl">
             Join Us & Grow Together
           </h2>
 
-          <p className="mb-8 md:max-w-[70%] mx-auto text-gray-200 font-[Inter] sec-desc">
+          <p data-aos="fade-up" className="mb-8 md:max-w-[70%] mx-auto text-gray-200 font-[Inter] 2xl:text-2xl">
             Become part of a trusted network built on premium digital services,
             fast support, and long-term opportunities. Let’s grow your business
             with confidence.
           </p>
 
-          <button className="px-7 py-2 rounded-full btn transition text-[1.1rem]">
+          <a data-aos="zoom-out-up" href="https:\\wa.me\+923000584969" target="_blank"><button className="px-7 py-2 rounded-full btn transition text-[1.1rem] 2xl:text-2xl 2xl:font-bold 2xl:py-4">
             <span className="relative">Chat On Whatsapp</span>
-          </button>
+          </button></a>
         </div>
         <div className="grid count-div grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 lg:gap-25 xl:px-50">
 
-          <div className="md:p-6 md:py-20 p-2 py-7 counting rounded-2xl text-center">
+          <div data-aos="zoom-in"
+            data-aos-anchor-placement="bottom-bottom" className="md:p-6 md:py-20 p-2 py-7 counting rounded-2xl text-center">
             <h3 className="text-6xl font-bold mb-2 text-gray-200">
               {clients}+
             </h3>
             <p className="text-xl ttt font-[Inter] font-bold">Happy Clients</p>
           </div>
 
-          <div className="md:p-6 md:py-20 p-2 py-7 counting rounded-2xl text-center">
+          <div data-aos="zoom-in"
+            data-aos-anchor-placement="bottom-bottom" className="md:p-6 md:py-20 p-2 py-7 counting rounded-2xl text-center">
             <h3 className="text-6xl font-bold mb-2 text-gray-200">
               {services}+
             </h3>
             <p className="text-xl ttt font-[Inter] font-bold">Services</p>
           </div>
 
-          <div className="md:p-6 md:py-20 p-2 py-7 counting rounded-2xl text-center">
+          <div data-aos="zoom-in"
+            data-aos-anchor-placement="bottom-bottom" className="md:p-6 md:py-20 p-2 py-7 counting rounded-2xl text-center">
             <h3 className="text-6xl font-bold mb-2 text-gray-200">
               {success}%
             </h3>

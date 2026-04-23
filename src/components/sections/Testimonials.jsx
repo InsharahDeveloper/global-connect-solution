@@ -92,16 +92,16 @@ function Testimonials() {
     <section className="w-full py-16 px-4 sm:px-6 md:px-10 lg:px-20 relative overflow-hidden">
 
       {/* Glow */}
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-orange-300/20 blur-[130px] rounded-full"></div>
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/10 blur-[130px] rounded-full"></div>
+      <div className="glow absolute top-0 left-0 w-[300px] h-[300px] bg-orange-300/20 blur-[130px] rounded-full"></div>
+      <div className="glow absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/10 blur-[130px] rounded-full"></div>
 
       {/* Heading */}
       <div className="text-center mb-14 relative z-10">
-        <h2 className="text-3xl md:text-5xl font-bold font-[Poppins] sec-title">
+        <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-bold font-[Poppins] 2xl:text-6xl">
           Clients <span className="orange">Proof</span> Gallery
         </h2>
 
-        <p className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto sec-desc">
+        <p data-aos="fade-up" className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl">
           Our results speak louder than promises. Trusted by clients worldwide with verified screenshots and positive feedback.
         </p>
       </div>
@@ -111,6 +111,7 @@ function Testimonials() {
 
         {reviews.map((item) => (
           <div
+            data-aos="flip-left"
             key={item.id}
             className={`p-1 rounded-2xl t-card shadow-xl group
       

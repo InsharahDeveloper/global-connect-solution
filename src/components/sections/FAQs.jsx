@@ -47,7 +47,11 @@ function FAQs() {
   ];
 
   return (
-    <section className="w-full py-16 FAQ px-4 sm:px-6 md:px-10 lg:px-20 relative overflow-hidden">
+    <section className="w-full py-16 FAQ px-4 sm:px-6 md:px-10 lg:px-20 relative overflow-hidden relative">
+
+      <div className="glow absolute top-0 left-0 w-[200px] h-[200px] bg-orange-400/20 blur-[130px] rounded-full  hidden sm:block"></div>
+      <div className="glow absolute bottom-0 right-0 w-[200px] h-[100px] bg-orange-400/20 blur-[130px] rounded-full"></div>
+
       {/* Glow */}
       <div className="absolute top-0 left-0 w-[280px] h-[280px] bg-orange-300/20 blur-[130px] rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-[280px] h-[280px] bg-orange-500/10 blur-[130px] rounded-full"></div>
@@ -108,15 +112,15 @@ function FAQs() {
 
         {/* Left Side */}
         <div className="flex flex-col justify-center">
-          <p className="text-orange-400 uppercase tracking-[4px] font-bold mb-1 2xl:text-4xl">
+          <p data-aos="zoom-in" className="text-orange-400 uppercase tracking-[4px] font-bold mb-1 2xl:text-3xl">
             FAQs
           </p>
 
-          <h2 className="text-3xl md:text-5xl font-bold 2xl:text-7xl">
+          <h2 data-aos="fade-left" className="text-3xl md:text-5xl font-bold 2xl:text-6xl">
             Frequently Asked <span className="orange">Questions</span>
           </h2>
 
-          <p className="text-gray-400 mt-4 leading-7 2xl:text-3xl 2xl:leading-9">
+          <p data-aos="fade-up" className="text-gray-400 mt-4 leading-7 2xl:text-2xl 2xl:leading-9">
             Find quick answers about our premium digital services, delivery
             process, warranties, and support.
           </p>

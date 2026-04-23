@@ -53,13 +53,17 @@ function Services() {
 
   return (
     <section className="w-full py-16 px-6 md:px-20 service-div relative mt-[50px]">
+
+      <div className="glow absolute top-0 left-0 w-[300px] h-[300px] bg-orange-400/20 blur-[130px] rounded-full  hidden sm:block"></div>
+      <div className="glow absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/40 blur-[130px] rounded-full"></div>
+
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold font-[Poppins] sec-title">
+        <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-bold font-[Poppins] 2xl:text-6xl">
           Our <span className="orange">Services</span>
         </h2>
 
-        <p className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto sec-desc">
+        <p data-aos="fade-up" className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl 2xl:max-w-5xl">
           Your trusted partner for premium digital accounts, Google Voice (GV),
           VoIP services, and global communication solutions.
         </p>
@@ -69,6 +73,7 @@ function Services() {
       <div className="grid mt-[80px] grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 justify-center ">
         {services.map((service, index) => (
           <div
+            data-aos="flip-left"
             key={index}
             className="group c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition"
           >
@@ -93,7 +98,7 @@ function Services() {
         ))}
 
         {/* Last Grid Card */}
-        <div className="group sm:col-span-2 lg:col-span-1 see-more c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition flex flex-col items-center justify-center text-center">
+        <div data-aos="flip-right" className="group sm:col-span-2 lg:col-span-1 see-more c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition flex flex-col items-center justify-center text-center">
           <h3 className="text-2xl font-bold orange mb-3">See More</h3>
 
           <p className="text-gray-400 mb-5">

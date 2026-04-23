@@ -29,19 +29,23 @@ function HowItWorks() {
   ];
 
   return (
-    <section className="w-full py-20 px-6 md:px-20 text-white how-work">
-      
+    <section className="w-full py-20 px-6 md:px-20 text-white how-work relative">
+
+      <div className="glow absolute top-0 left-0 w-[300px] h-[300px] bg-orange-400/20 blur-[130px] rounded-full  hidden sm:block"></div>
+      <div className="glow absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/20 blur-[130px] rounded-full"></div>
+
+
       {/* Heading */}
       <div className="text-center max-w-7xl mx-auto mb-14">
-        <p className="text-orange-400 uppercase tracking-[4px] js font-bold mb-1">
+        <p data-aos="zoom-in" className="text-orange-400 uppercase tracking-[4px] js font-bold mb-1 2xl:text-3xl">
           How It Works
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-[Poppins] font-bold leading-tight mb-3 sec-title">
+        <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-[Poppins] font-bold leading-tight mb-3 2xl:text-6xl text-blue heading-sec">
           Easy & <span className="orange">Fast</span>  Process
         </h2>
 
-        <p className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto sec-desc">
+        <p data-aos="fade-up" className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl">
           We make everything simple, secure, and fast so you can grow without delays.
         </p>
       </div>
@@ -50,6 +54,7 @@ function HowItWorks() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-9xl mx-auto">
         {steps.map((step) => (
           <div
+            data-aos="flip-left"
             key={step.id}
             className="group relative pt-15 c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition"
           >

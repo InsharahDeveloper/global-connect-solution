@@ -25,79 +25,79 @@ function Sidebar({ open, setOpen }) {
 
   // Sidebar Animation
   useEffect(() => {
-  if (open) {
-    // Sidebar open
-    gsap.to(sidebarRef.current, {
-      right: 0,
-      duration: 0.5,
-      ease: "power3.out",
-      zIndex: 100,
-    });
-
-    // LI right side se apni jagah aayein
-    gsap.fromTo(
-      menuRef.current,
-      {
-        x: 100,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
+    if (open) {
+      // Sidebar open
+      gsap.to(sidebarRef.current, {
+        right: 0,
         duration: 0.5,
-        stagger: 0.12,
-        delay: 0.2,
         ease: "power3.out",
-      }
-    );
+        zIndex: 100,
+      });
 
-    // Icons neeche se
-    gsap.fromTo(
-      socialRef.current,
-      {
+      // LI right side se apni jagah aayein
+      gsap.fromTo(
+        menuRef.current,
+        {
+          x: 100,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.5,
+          stagger: 0.12,
+          delay: 0.2,
+          ease: "power3.out",
+        }
+      );
+
+      // Icons neeche se
+      gsap.fromTo(
+        socialRef.current,
+        {
+          y: 60,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          delay: 0.8,
+          ease: "power3.out",
+        }
+      );
+
+    } else {
+      // Icons reverse
+      gsap.to(socialRef.current, {
         y: 60,
         opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
+        duration: 0.3,
+        ease: "power3.in",
+      });
+
+      // LI apni jagah se right side jayein
+      gsap.to(menuRef.current, {
+        x: 100,
+        opacity: 0,
+        duration: 0.4,
+        stagger: {
+          each: 0.08,
+          from: "end",
+        },
+        ease: "power3.in",
+      });
+
+      // Sidebar band
+      gsap.to(sidebarRef.current, {
+        right: "-100%",
         duration: 0.5,
-        delay: 0.8,
-        ease: "power3.out",
-      }
-    );
-
-  } else {
-    // Icons reverse
-    gsap.to(socialRef.current, {
-      y: 60,
-      opacity: 0,
-      duration: 0.3,
-      ease: "power3.in",
-    });
-
-    // LI apni jagah se right side jayein
-    gsap.to(menuRef.current, {
-      x: 100,
-      opacity: 0,
-      duration: 0.4,
-      stagger: {
-        each: 0.08,
-        from: "end",
-      },
-      ease: "power3.in",
-    });
-
-    // Sidebar band
-    gsap.to(sidebarRef.current, {
-      right: "-100%",
-      duration: 0.5,
-      delay: 0.35,
-      ease: "power3.inOut",
-      zIndex: -3,
-    });
-  }
-}, [open]);
+        delay: 0.35,
+        ease: "power3.inOut",
+        zIndex: -3,
+      });
+    }
+  }, [open]);
 
   // Outside click close
   useEffect(() => {
@@ -120,10 +120,10 @@ function Sidebar({ open, setOpen }) {
 
   const navItems = [
     "Home",
-    "About",
     "Services",
-    "Client Trust Wall",
+    "Clients Proof Gallery",
     "Contact Us",
+    "Privacy Policy",
   ];
 
   return (
