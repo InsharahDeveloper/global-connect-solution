@@ -4,7 +4,7 @@ function WaMe() {
     return (
         <>
             <div className="fixed bottom-3 left-3 z-[100] ">
-                <a href="https:wa.me/+923000584969" target="_blank" className="flex items-center gap-3">
+                <a href="https://wa.me/+923000584969" target="_blank" className="flex items-center gap-2">
 
                     {/* WhatsApp Icon */}
                     <div className="w-15 p-1 rounded-2xl bg-[#eff6ff] shadow-lg cursor-pointer hover:scale-110 transition">
