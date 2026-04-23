@@ -18,16 +18,16 @@ function ContactUs() {
     const loadingToast = toast.loading("Sending Message...");
 
     try {
-      const res = await fetch("http://localhost:5000/contact", {
+      const res = await fetch("https://global-connect-solution-backend-production.up.railway.app/contact", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          name: username,
-          email: email,
-          message: message,
-        }),
+          name: "Test",
+          email: "test@gmail.com",
+          message: "Hello"
+        })
       });
 
       const data = await res.json();
@@ -59,7 +59,7 @@ function ContactUs() {
           className={`px-5 py-3 rounded-xl text-white bg-red-500 shadow-lg transition-all duration-500 ${t.visible ? "opacity-100 scale-100" : "opacity-0 scale-10"
             }`}
         >
-         ✖ Failed to Send Message
+          ✖ Failed to Send Message
         </div>
       ));
     }
