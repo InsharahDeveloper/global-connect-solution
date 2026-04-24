@@ -192,7 +192,7 @@ function ContactUs() {
                 className="w-full py-3 rounded-xl bg-orange-400 transition font-semibold"
                 type="submit"
               >
-                Submit
+                <div className="relative">Submit</div>
               </button>
               <p>{}</p>
             </div>
