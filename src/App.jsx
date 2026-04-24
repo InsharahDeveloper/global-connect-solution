@@ -1,5 +1,6 @@
 import "./App.css";
 import Home from "./components/pages/Home";
+import ContactUs from "./components/pages/ContactUs";
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -20,6 +21,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </>
   );

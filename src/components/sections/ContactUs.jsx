@@ -62,7 +62,7 @@ function ContactUs() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start cs-grid">
 
         {/* Left Side Info */}
-        <div className="rounded-2xl p-6 sm:p-8 space-y-6 ">
+        <div className="rounded-2xl order-last p-0 sm:p-8 space-y-6 ">
           <h3 data-aos="fade-right" className="text-2xl font-semibold orange 2xl:text-5xl">Get In Touch</h3>
           <p data-aos="fade-right" className="text-gray-400 leading-7 2xl:text-2xl">
             Reach out to us for pricing, support, bulk orders, or custom service requests.
@@ -70,7 +70,7 @@ function ContactUs() {
 
           <div className="space-y-5">
 
-            <div data-aos="zoom-in" className="flex items-center gap-4 ptf">
+            <div data-aos="zoom-in" className="flex items-center sm:gap-4 gap-2 ptf">
               <div className="p-3 rounded-xl bg-orange-500/10 text-orange-400">
                 <Phone size={22} className="in" />
               </div>
@@ -80,17 +80,17 @@ function ContactUs() {
               </div>
             </div>
 
-            <div data-aos="zoom-in" className="flex items-center gap-4 ptf">
+            <div data-aos="zoom-in" className="flex items-center sm:gap-4 gap-2 ptf">
               <div className="p-3 rounded-xl bg-orange-500/10 text-orange-400">
                 <Mail size={22} className="in" />
               </div>
               <div>
                 <p className="text-sm text-gray-400 2xl:text-xl ptf-name">Email</p>
-                <p className="text-white font-medium  text-blue 2xl:text-xl ptf-info">info.trustedGVStore786@gmail.com</p>
+                <p className="text-white font-medium text-blue 2xl:text-xl ptf-info">pending@gmail.com</p>
               </div>
             </div>
 
-            <div data-aos="zoom-in" className="flex items-center gap-4 ptf">
+            <div data-aos="zoom-in" className="flex items-center sm:gap-4 gap-2 ptf">
               <div className="p-3 rounded-xl bg-orange-500/10 text-orange-400">
                 <Send size={22} className="in" />
               </div>
@@ -113,7 +113,7 @@ function ContactUs() {
         </div>
 
         {/* Right Side Form */}
-        <div className="rounded-2xl p-6 sm:p-8 ">
+        <div className="rounded-2xl order-first p-0 sm:p-8 ">
           <h3 data-aos="fade-right" className="text-2xl font-semibold orange mb-6 2xl:text-5xl">
             Send Message
           </h3>
@@ -194,7 +194,6 @@ function ContactUs() {
               >
                 <div className="relative z-1">Submit</div>
               </button>
-              <p>{}</p>
             </div>
 
           </form>

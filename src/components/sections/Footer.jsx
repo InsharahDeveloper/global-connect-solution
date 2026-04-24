@@ -8,6 +8,7 @@ import {
 import lightlogo from "../../assets/herosection/light_logo.png"
 import darklogo from "../../assets/herosection/logo.png"
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function Footer() {
@@ -52,11 +53,11 @@ function Footer() {
         <div>
           <h2 data-aos="zoom-in-up" className="text-xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-3 text-gray-400">
-            <li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Home</li>
-            <li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Services</li>
-            <li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Clients Proof Gallery</li>
-            <li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Contact Us</li>
-            <li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Privacy Policy</li>
+            <Link to="/"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Home</li></Link>
+            <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Services</li></Link>
+            <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Clients Proof Gallery</li></Link>
+            <Link to="/Contact"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Contact Us</li></Link>
+            <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Privacy Policy</li></Link>
           </ul>
         </div>
 
@@ -75,7 +76,7 @@ function Footer() {
 
             <div data-aos="zoom-in-up" className="flex items-center gap-3">
               <Mail size={18} className="text-orange-400" />
-              <span>info.trustedGVStore786@gmail.com</span>
+              <span>pending@gmail.com</span>
             </div>
 
             <div data-aos="zoom-in-up" className="flex items-center gap-3">

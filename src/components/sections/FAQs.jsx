@@ -52,10 +52,6 @@ function FAQs() {
       <div className="glow absolute top-0 left-0 w-[200px] h-[200px] bg-orange-400/20 blur-[130px] rounded-full  hidden sm:block"></div>
       <div className="glow absolute bottom-0 right-0 w-[200px] h-[100px] bg-orange-400/20 blur-[130px] rounded-full"></div>
 
-      {/* Glow */}
-      <div className="absolute top-0 left-0 w-[280px] h-[280px] bg-orange-300/20 blur-[130px] rounded-full"></div>
-      <div className="absolute bottom-0 right-0 w-[280px] h-[280px] bg-orange-500/10 blur-[130px] rounded-full"></div>
-
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
 
         {/* FAQ Side */}

@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Social_Pages from "./Social_pages";
 
 function Sidebar({ open, setOpen }) {
@@ -26,7 +27,6 @@ function Sidebar({ open, setOpen }) {
   // Sidebar Animation
   useEffect(() => {
     if (open) {
-      // Sidebar open
       gsap.to(sidebarRef.current, {
         right: 0,
         duration: 0.5,
@@ -34,13 +34,9 @@ function Sidebar({ open, setOpen }) {
         zIndex: 100,
       });
 
-      // LI right side se apni jagah aayein
       gsap.fromTo(
         menuRef.current,
-        {
-          x: 100,
-          opacity: 0,
-        },
+        { x: 100, opacity: 0 },
         {
           x: 0,
           opacity: 1,
@@ -51,13 +47,9 @@ function Sidebar({ open, setOpen }) {
         }
       );
 
-      // Icons neeche se
       gsap.fromTo(
         socialRef.current,
-        {
-          y: 60,
-          opacity: 0,
-        },
+        { y: 60, opacity: 0 },
         {
           y: 0,
           opacity: 1,
@@ -66,9 +58,7 @@ function Sidebar({ open, setOpen }) {
           ease: "power3.out",
         }
       );
-
     } else {
-      // Icons reverse
       gsap.to(socialRef.current, {
         y: 60,
         opacity: 0,
@@ -76,7 +66,6 @@ function Sidebar({ open, setOpen }) {
         ease: "power3.in",
       });
 
-      // LI apni jagah se right side jayein
       gsap.to(menuRef.current, {
         x: 100,
         opacity: 0,
@@ -88,7 +77,6 @@ function Sidebar({ open, setOpen }) {
         ease: "power3.in",
       });
 
-      // Sidebar band
       gsap.to(sidebarRef.current, {
         right: "-100%",
         duration: 0.5,
@@ -119,11 +107,11 @@ function Sidebar({ open, setOpen }) {
   }, [open, setOpen]);
 
   const navItems = [
-    "Home",
-    "Services",
-    "Clients Proof Gallery",
-    "Contact Us",
-    "Privacy Policy",
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: "Clients Proof Gallery", path: "/gallery" },
+    { name: "Contact Us", path: "/contact" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
   ];
 
   return (
@@ -141,7 +129,9 @@ function Sidebar({ open, setOpen }) {
             ref={(el) => (menuRef.current[index] = el)}
             className="lg:m-4 my-2 li relative"
           >
-            {item}
+            <Link to={item.path} onClick={() => setOpen(false)}>
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>
