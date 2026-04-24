@@ -10,14 +10,14 @@ import CPageHeading from "../sections/CPageHeading";
 import Newsletter from "../sections/Newsletter";
 
 
-function Home() {
+function Contact() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
       <div className="main w-full">
         <div className="home relative">
-        <CPageHeading />
+        <CPageHeading/>
         <Navbar setOpen={setOpen} />
         <Sidebar open={open} setOpen={setOpen} />
         </div>
@@ -31,4 +31,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Contact;

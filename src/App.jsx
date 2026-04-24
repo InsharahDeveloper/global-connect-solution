@@ -7,6 +7,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { Routes, Route } from "react-router-dom";
+import PrivacyPolicy from "./components/pages/Policy";
+
+import TermsAndConditions from "./components/pages/Terms&Conditions"
+import ClientProofGallery from "./components/pages/ProofGallery";
 
 function App() {
   useEffect(() => {
@@ -22,6 +26,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsAndConditions />} />
+        <Route path="/client-proof-gallery" element={<ClientProofGallery />} />
       </Routes>
     </>
   );

@@ -55,9 +55,10 @@ function Footer() {
           <ul className="space-y-3 text-gray-400">
             <Link to="/"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Home</li></Link>
             <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Services</li></Link>
-            <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Clients Proof Gallery</li></Link>
-            <Link to="/Contact"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Contact Us</li></Link>
-            <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Privacy Policy</li></Link>
+            <Link to="/client-proof-gallery"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Clients Proof Gallery</li></Link>
+            <Link to="/contact"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Contact Us</li></Link>
+            <Link to="/privacy-policy"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Privacy Policy</li></Link>
+            <Link to="/terms-conditions"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3">Terms & Conditions</li></Link>
           </ul>
         </div>
 
