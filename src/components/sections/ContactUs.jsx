@@ -4,68 +4,41 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 
 function ContactUs() {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
+ const onSubmit = async (event) => {
+  event.preventDefault();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const formData = new FormData(event.target);
+  formData.append("access_key", "ed1f7740-4240-42ec-8c80-ba855eb16d7c");
 
-    setLoading(true);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
 
-    // loading toast
-    const loadingToast = toast.loading("Sending Message...");
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    });
 
-    try {
-      const res = await fetch("https://global-connect-solution-backend-production.up.railway.app/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          name: "Test",
-          email: "test@gmail.com",
-          message: "Hello"
-        })
-      });
+    const response = await res.json(); // ✅ important fix
 
-      const data = await res.json();
-
-      toast.dismiss(loadingToast);
-
-      if (data.success) {
-        toast.custom((t) => (
-          <div
-            className={`px-5 py-3 rounded-xl text-white bg-green-400 shadow-lg transition-all duration-500 ${t.visible ? "opacity-100 scale-100" : "opacity-0 scale-75"
-              }`}
-          >
-            ✔︎ Message Sent Successfully
-          </div>
-        ));
-
-        setUsername("");
-        setEmail("");
-        setMessage("");
-      } else {
-        throw new Error();
-      }
-
-    } catch (error) {
-      toast.dismiss(loadingToast);
-
-      toast.custom((t) => (
-        <div
-          className={`px-5 py-3 rounded-xl text-white bg-red-500 shadow-lg transition-all duration-500 ${t.visible ? "opacity-100 scale-100" : "opacity-0 scale-10"
-            }`}
-        >
-          ✖ Failed to Send Message
-        </div>
-      ));
+    if (response.success) {
+      toast.success("Message sent successfully 🚀");
+      event.target.reset();
+    } else {
+      toast.error(response.message || "Something went wrong");
     }
 
-    setLoading(false);
-  };
+    console.log("Response:", response);
+
+  } catch (error) {
+    console.log("Error:", error);
+    toast.error("Network error!");
+  }
+};
 
 
   return (
@@ -145,17 +118,16 @@ function ContactUs() {
             Send Message
           </h3>
 
-          <form data-aos="zoom-out-up" className="space-y-6 mt-10" onSubmit={handleSubmit}>
+          <form data-aos="zoom-out-up" className="space-y-6 mt-10"  onSubmit={onSubmit}>
 
             {/* Full Name */}
             <div className="relative">
               <input
+              name="name"
                 type="text"
                 required
                 placeholder=" "
                 className="peer w-full 2xl:text-2xl px-4 py-4 rounded-xl bg-transparent border border-gray-300 t-blue outline-none focus:border-orange-400"
-                value={username}
-                onChange={(e) => { setUsername(e.target.value) }}
               />
 
               <label className="absolute 2xl:top-8 2xl:text-2xl left-4 top-5 -translate-y-1/2 px-2 text-gray-400 transition-all duration-300 
@@ -167,12 +139,11 @@ function ContactUs() {
             {/* Email */}
             <div className="relative">
               <input
+              name="email"
                 type="email"
                 required
                 placeholder=" "
                 className="peer  2xl:text-2xl w-full px-4 py-4 rounded-xl bg-transparent border border-gray-300 t-blue outline-none focus:border-orange-400"
-                value={email}
-                onChange={(e) => { setEmail(e.target.value) }}
               />
 
               <label
@@ -203,12 +174,11 @@ function ContactUs() {
             {/* Message */}
             <div className="relative">
               <textarea
+              name="message"
                 rows="5"
                 required
                 placeholder=" "
                 className="peer 2xl:text-2xl w-full px-4 py-4 rounded-xl bg-transparent border border-gray-300 t-blue outline-none resize-none focus:border-orange-400"
-                value={message}
-                onChange={(e) => { setMessage(e.target.value) }}
               ></textarea>
 
               <label className="absolute 2xl:top-8 2xl:text-2xl left-4 top-5 -translate-y-1/2 px-2 text-gray-400 transition-all duration-300 
@@ -221,16 +191,10 @@ function ContactUs() {
               <button
                 className="w-full py-3 rounded-xl bg-orange-400 transition font-semibold"
                 type="submit"
-                disabled={loading}
               >
-                <span className="relative 2xl:text-3xl">
-                  {loading ? (
-                    <span className="dots">Sending</span>
-                  ) : (
-                    "Submit Request"
-                  )}
-                </span>
+                Submit
               </button>
+              <p>{}</p>
             </div>
 
           </form>

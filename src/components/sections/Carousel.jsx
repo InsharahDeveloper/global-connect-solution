@@ -36,23 +36,23 @@ function Carousel() {
   return (
     <div className="carousel relative" ref={containerRef}>
       <div className="group">
-        <div className="card"><i class="ri-verified-badge-line mr-2"></i> Trusted Worldwide</div>
+        <div className="card"><i className="ri-verified-badge-line mr-2"></i> Trusted Worldwide</div>
         <div className="card">|</div>
-        <div className="card"><i class="ri-git-repository-private-line mr-2"></i> Secure Service</div>
+        <div className="card"><i className="ri-git-repository-private-line mr-2"></i> Secure Service</div>
         <div className="card">|</div>
-        <div className="card"><i class="ri-speed-line mr-2"></i> Fast Support</div>
+        <div className="card"><i className="ri-speed-line mr-2"></i> Fast Support</div>
         <div className="card">|</div>
-        <div className="card"><i class="ri-global-line mr-2"></i> Global Reach</div>
+        <div className="card"><i className="ri-global-line mr-2"></i> Global Reach</div>
         <div className="card">|</div>
       </div>
       <div className="group" aria-hidden="true">
-        <div className="card"><i class="ri-verified-badge-line mr-2"></i> Trusted Worldwide</div>
+        <div className="card"><i className="ri-verified-badge-line mr-2"></i> Trusted Worldwide</div>
         <div className="card">|</div>
-        <div className="card"><i class="ri-git-repository-private-line mr-2"></i> Secure Service</div>
+        <div className="card"><i className="ri-git-repository-private-line mr-2"></i> Secure Service</div>
         <div className="card">|</div>
-        <div className="card"><i class="ri-speed-line mr-2"></i> Fast Support</div>
+        <div className="card"><i className="ri-speed-line mr-2"></i> Fast Support</div>
         <div className="card">|</div>
-        <div className="card"><i class="ri-global-line mr-2"></i> Global Reach</div>
+        <div className="card"><i className="ri-global-line mr-2"></i> Global Reach</div>
         <div className="card">|</div>
       </div>
     </div>

@@ -114,7 +114,7 @@ function Footer() {
               href="https://www.facebook.com/share/19g8i8fwvv/" target="_blank"
               className="p-2 rounded-full bg-orange-500/10 flex items-center justify-center w-10 h-10 hover:bg-orange-500 transition hover:scale-[1.2] hover:shadow-lg cursor-pointer"
             >
-              <i class="ri-facebook-fill text-2xl"></i>
+              <i className="ri-facebook-fill text-2xl"></i>
             </a>
 
             {/* LinkedIn */}
@@ -122,7 +122,7 @@ function Footer() {
               href="https://www.linkedin.com/in/global-connect-solution-4a3086210?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"
               className="p-2 rounded-full bg-orange-500/10 flex items-center justify-center w-10 h-10 hover:bg-orange-500 transition hover:scale-[1.2] hover:shadow-lg cursor-pointer"
             >
-              <i class="ri-linkedin-fill text-2xl"></i>
+              <i className="ri-linkedin-fill text-2xl"></i>
             </a>
 
             {/* WhatsApp */}
@@ -130,7 +130,7 @@ function Footer() {
               href="https://whatsapp.com/channel/0029VbC6klR3WHTWoV2tlz04" target="_blank"
               className="p-2 rounded-full bg-orange-500/10 flex items-center justify-center w-10 h-10 hover:bg-orange-500 transition hover:scale-[1.2] hover:shadow-lg cursor-pointer"
             >
-              <i class="ri-whatsapp-line text-2xl"></i>
+              <i className="ri-whatsapp-line text-2xl"></i>
             </a>
 
           </div>
