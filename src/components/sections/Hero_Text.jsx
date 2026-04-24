@@ -5,7 +5,7 @@ function Hero_Text({ scrollToServices }) {
   return (
     <div className="space-y-5 max-[913px]:text-center text-left px-2 lg:px-13 w-full 2xl:px-5 2xl:ps-40">
 
-      <div data-aos="fade-right" className="inline-flex flex-wrap trust-badge justify-center md:justify-start gap-2 px-4 py-2 rounded-full md:border md:border-gray-300 text-xs sm:text-sm max-[1040px]:px-2  sm:text-[1rem] 2xl:text-xl">
+      <div data-aos="fade-right" className="inline-flex flex-wrap trust-badge justify-center md:justify-start gap-2 px-4 py-2 rounded-full md:border-2 md:border-orange-400 font-semibold text-xs sm:text-sm max-[1040px]:px-2  sm:text-[1rem] 2xl:text-xl">
         <span>🌍 Trusted Globally</span>
         <span>|</span>
         <span>🔐 Safe Service</span>

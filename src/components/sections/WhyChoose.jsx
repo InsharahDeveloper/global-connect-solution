@@ -32,28 +32,28 @@ function WhyChoose({scrollToServices}) {
             {/* RIGHT SECTION */}
             <div className="right grid grid-cols-1 sm:grid-cols-2 gap-5">
 
-                <div data-aos="flip-left" className="c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition">
+                <div data-aos="flip-left" className="c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md  shadow-lg ">
                     <h3 className="text-xl font-semibold mb-2">🔐 Trusted Service</h3>
                     <p className="text-sm text-gray-400">
                         Reliable solutions handled professionally with client satisfaction first.
                     </p>
                 </div>
 
-                <div data-aos="flip-right" className="c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition">
+                <div data-aos="flip-right" className="c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md shadow-lg ">
                     <h3 className="text-xl font-semibold mb-2">⚡ Fast Support</h3>
                     <p className="text-sm text-gray-400">
                         Quick communication and efficient service whenever you need us.
                     </p>
                 </div>
 
-                <div data-aos="flip-left" className="c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition">
+                <div data-aos="flip-left" className="c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md  shadow-lg ">
                     <h3 className="text-xl font-semibold mb-2">🌍 Global Reach</h3>
                     <p className="text-sm text-gray-400">
                         Providing trusted digital solutions for clients worldwide.
                     </p>
                 </div>
 
-                <div data-aos="flip-right" className="c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition">
+                <div data-aos="flip-right" className="c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md  shadow-lg ">
                     <h3 className="text-xl font-semibold mb-2">🤝 Dedicated Support</h3>
                     <p className="text-sm text-gray-400">
                         Building long-term relationships through real support.

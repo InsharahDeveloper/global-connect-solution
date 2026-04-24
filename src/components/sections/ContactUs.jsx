@@ -102,14 +102,41 @@ function ContactUs() {
 
           </div>
 
-          <div data-aos="zoom-in" className="pt-4 chat-btn">
-            <button className="w-full 2xl:text-2xl sm:w-auto relative overflow-hidden px-6 py-2 rounded-full bg-orange-400 transition text-white font-medium">
-              <a href="https:wa.me/+923000584969" className=" flex items-center justify-center gap-2" target="_blank">
-                <MessageCircle size={20} className="relative ic" />
-                <span className="relative">Chat Now</span>
-              </a>
-            </button>
-          </div>
+          <div
+  data-aos="zoom-in"
+  className="pt-4 flex flex-wrap gap-4 chat-btn"
+>
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/923000584969"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 max-[500px]:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-400 text-white font-medium hover:scale-105 transition"
+  >
+    <MessageCircle size={20} className="ic" />
+    <span>Chat Now</span>
+  </a>
+
+  {/* Telegram */}
+  <a
+    href="https://t.me/@GCS_Communication"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 max-[500px]:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-400 text-white font-medium hover:scale-105 transition"
+  >
+    <Send size={20} className="ic" />
+    <span>Telegram</span>
+  </a>
+
+  {/* Email */}
+  <a
+    href="mailto:pending@gmail.com"
+    className="flex-1 max-[500px]:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-400 text-white font-medium hover:scale-105 transition"
+  >
+    <Mail size={20} className="ic" />
+    <span>Email</span>
+  </a>
+</div>
         </div>
 
         {/* Right Side Form */}

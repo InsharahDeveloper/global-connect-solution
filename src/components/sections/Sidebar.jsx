@@ -123,7 +123,7 @@ function Sidebar({ open, setOpen }) {
         </button>
       </div>
 
-      <ul className="navs-div font-[Poppins] sm:text-[.9rem] lg:text-[1.2rem] xl:text-[1.5rem] ml-4">
+      <ul className="navs-div font-[Poppins] sm:text-[.9rem] lg:text-[1.2rem] xl:text-[1.1rem] ml-4">
         {navItems.map((item, index) => (
           <li
             key={index}

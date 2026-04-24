@@ -59,12 +59,12 @@ function HowItWorks() {
             className="group relative pt-15 c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition"
           >
             {/* Step Number */}
-            <span className="absolute top-4 right-5 text-5xl font-bold orangee">
+            <span className="absolute top-4 right-5 text-5xl font-bold">
               {step.id}
             </span>
 
             {/* Icon */}
-            <div className="w-16 h-16 icon rounded-full bg-blue-600/10 text-orange-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <div className="w-16 h-16 icon rounded-full text-orange-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
               {step.icon}
             </div>
 

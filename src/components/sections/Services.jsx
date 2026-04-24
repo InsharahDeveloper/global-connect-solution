@@ -78,7 +78,7 @@ function Services() {
             className="group c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition"
           >
             {/* Icon */}
-            <div className="text-orange-400 icon mb-4 group-hover:text-blue-900 transition duration-[1.6s]">
+            <div className="text-white icon mb-4">
               {service.icon}
             </div>
 
@@ -86,26 +86,26 @@ function Services() {
             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
 
             {/* Description */}
-            <p className="text-gray-400 text-md leading-relaxed mb-5">
+            <p className="text-md leading-relaxed mb-5">
               {service.desc}
             </p>
 
             {/* Explore Button */}
-            <button className="py-1 px-3 rounded-[50px] border border-orange-400 text-orange-400 font-medium transition duration-300 hover:bg-orange-400 hover:text-white">
+            <button className="py-1 px-3 rounded-[50px] border text-blue font-medium transition duration-300 hover:bg-orange-400 hover:text-white">
               Explore More
             </button>
           </div>
         ))}
 
         {/* Last Grid Card */}
-        <div data-aos="flip-right" className="group sm:col-span-2 lg:col-span-1 see-more c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition flex flex-col items-center justify-center text-center">
-          <h3 className="text-2xl font-bold orange mb-3">See More</h3>
+        <div data-aos="flip-right" className="group sm:col-span-2 lg:col-span-1 see-more c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md shadow-lg hover:scale-105 transition flex flex-col items-center justify-center text-center">
+          <h3 className="text-2xl font-bold mb-3">See More</h3>
 
           <p className="text-gray-400 mb-5">
             Discover more premium digital solutions for your business growth.
           </p>
 
-          <button className="flex items-center gap-2 py-2 px-5 rounded-full border border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white transition duration-300">
+          <button className="flex items-center gap-2 py-2 px-5 rounded-full text-orange-400 hover:bg-orange-400 hover:text-white transition duration-300">
             View All <ArrowRight size={18} />
           </button>
         </div>

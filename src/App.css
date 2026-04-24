@@ -439,8 +439,12 @@ body::selection {
 }
 
 .trust-badge {
-  color: #95a7b8;
+  columns: var(--darkbg);
   width: fit-content;
+}
+
+.dark-theme .trust-badge{
+
 }
 
 .carousel {
@@ -487,10 +491,33 @@ body::selection {
   padding: 10px 20px;
 }
 
-.c-card {
+.c-card{
   position: relative;
   overflow: hidden;
-  transition: all 0.5s ease;
+  background-color: var(--primarybg);
+  transition: all .6s ease !important;
+}
+
+.c-card p{
+  color: white;
+  font-size: 1.1rem;
+  transition: all 0.9s ease;
+}
+
+.c-card h3{
+    transition: all 0.9s ease;
+}
+
+.dark-theme .c-card::before{
+  background-color: var(--lightbg);
+}
+
+.dark-theme .c-card:hover p{
+  color: var(--lighttext) !important;
+}
+
+.dark-theme .c-card:hover{
+  color: var(--lighttext);
 }
 
 .c-card::before {
@@ -500,7 +527,7 @@ body::selection {
   position: absolute;
   top: 0px;
   left: -100%;
-  background-color: var(--primarybg);
+  background-color: var(--darkbg);
   transition: all 0.8s ease;
   border-radius: 50px;
   z-index: -1;
@@ -513,11 +540,7 @@ body::selection {
 
 .c-card:hover {
   color: var(--darktext);
-
-}
-
-.c-card p {
-  transition: all 0.5s ease;
+  scale: 1.05;
 
 }
 
@@ -525,17 +548,17 @@ body::selection {
   color: #e2eefa !important;
 }
 
-.dark-theme .service-div {
-  border-top: 1px solid rgb(93, 114, 172);
-}
-
-.service-div .c-card:hover .icon {
-  color: var(--darkbg);
-}
-
 .service-div .c-card:hover button {
   background-color: var(--lightbg);
   color: var(--lighttext);
+}
+
+.dark-theme .service-div .c-card .icon{
+  transition: all .5s ease;
+}
+
+.dark-theme .service-div .c-card .icon{
+  color: var(--darkbg);
 }
 
 .service-div .c-card button {
@@ -554,9 +577,13 @@ body::selection {
   position: absolute;
   transition: all 0.8s ease;
   z-index: -1;
-  background-color: var(--lighttext);
+  background-color: var(--primarybg);
   border-radius: 20px;
 
+}
+
+.dark-theme .c-card button:hover{
+  color: var(--darktext) !important;
 }
 
 .service-div .c-card button:hover::before {
@@ -566,17 +593,20 @@ body::selection {
 
 .service-div .c-card button:hover {
   cursor: pointer;
-  background-color: none !important;
   color: var(--darktext);
   scale: 1.1;
 }
 
 .see-more {
-  background-color: var(--primarybg);
+  background-color: var(--darkbg);
+}
+
+.dark-theme .see-more {
+  background-color: var(--lightbg);
 }
 
 .see-more h3 {
-  color: var(--lighttext);
+  color: var(--darktext);
   transition: all .3s;
 }
 
@@ -584,46 +614,43 @@ body::selection {
   color: var(--darktext);
 }
 
+.see-more:hover p ,.see-more:hover h3{
+  color: var(--lighttext) !important;
+}
+
 .see-more button {
   color: var(--lighttext);
   background-color: var(--lightbg);
 }
 
-.see-more::before {
+.see-more button:hover::before {
   background-color: var(--darkbg);
 }
 
-.see-more:hover h3 {
-  color: var(--primarytext);
+.see-more::before {
+  background-color: var(--primarybg) !important;
 }
 
-.see-more:hover {
-  border: none;
+.dark-theme .see-more p , .dark-theme .see-more h3{
+  color: #083055 !important;
 }
 
-.see-more:hover button {
-  border: none;
+.dark-theme .see-more button{
+  background-color: var(--darkbg);
+  color: var(--darktext);
 }
 
-.see-more button:hover::before {
-  background-color: var(--primarybg);
+.dark-theme .see-more:hover button{
+  background-color: var(--darkbg);
+  color: var(--darktext);
 }
 
-.dark-theme .see-more::before {
-  background-color: var(--lightbg);
+.dark-theme .see-more button:hover{
+    color: var(--lighttext) !important;
 }
 
-.dark-theme .see-more:hover p {
-  color: var(--lighttext) !important;
-}
-
-.dark-theme .see-more:hover button {
-  background-color: var(--primarybg);
-}
-
-.dark-theme .see-more button:hover::before {
-  background-color: var(--lighttext);
-  color: var(--primarybg);
+.dark-theme .see-more button::before {
+  background-color: var(--lightbg) !important;
 }
 
 .join-us .overlay {
@@ -677,21 +704,26 @@ body::selection {
   color: var(--darktext) !important;
 }
 
+.how-work .icon{
+  background-color: var(--darkbg);
+}
+
+.how-work .c-card:hover .tytl{
+  color: var(--lightbg) !important;
+}
+
+.how-work .c-card:hover .icon{
+  background-color: var(--primarybg) !important;
+  color: var(--lightbg);
+}
+
+.dark-theme .how-work .c-card:hover .tytl{
+  color: var(--darkbg) !important;
+}
+
 .dark-theme .how-work .icon {
   background-color: var(--darkbg);
   color: var(--darktext);
-}
-
-.dark-theme .how-work .tytl {
-  color: var(--darktext) !important;
-}
-
-.how-work .c-card:hover .orangee {
-  color: #aac5dfc0 !important;
-}
-
-.how-work .c-card:hover .icon {
-  background-color: #083055 !important;
 }
 
 .t-card {
@@ -1672,21 +1704,21 @@ body::selection {
   }
 
   .sidebar ul {
-    font-size: 3rem !important;
+    font-size: 1.4rem !important;
   }
 
   .social-icons {
-    font-size: 3rem !important;
+    font-size: 1.5rem !important;
     width: fit-content !important;
   }
 
   .sidebar.dark .social-icons {
-    font-size: 3rem !important;
+    font-size: 1.5rem !important;
   }
 
   .sidebar .social-icons div {
-    width: 70px;
-    height: 70px !important;
+    width: 40px;
+    height: 40px !important;
   }
 
   .trust-bdg {
