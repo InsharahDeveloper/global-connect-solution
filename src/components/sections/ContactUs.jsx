@@ -119,7 +119,7 @@ function ContactUs() {
 
   {/* Telegram */}
   <a
-    href="https://t.me/@GCS_Communication"
+    href="https://t.me/GCS_Communication"
     target="_blank"
     rel="noopener noreferrer"
     className="flex-1 max-[500px]:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-400 text-white font-medium hover:scale-105 transition"
