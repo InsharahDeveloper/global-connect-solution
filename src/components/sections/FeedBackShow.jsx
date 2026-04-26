@@ -98,7 +98,7 @@ function FeedbackSlider() {
                 </h3>
 
                 <p className="text-sm mb-3">
-                  Client
+                  Client : {item.service}
                 </p>
 
                 {/* Stars */}

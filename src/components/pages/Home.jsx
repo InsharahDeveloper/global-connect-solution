@@ -13,6 +13,8 @@ import ContactUs from "../sections/ContactUs";
 import Footer from "../sections/Footer";
 import WaMe from "../sections/WaMe";
 import FeedbackForm from "../sections/FeedBackForm";
+import FeedbackList from "../sections/FeedBackShow";
+
 
 function Home() {
   const [open, setOpen] = useState(false);
@@ -48,6 +50,7 @@ function Home() {
         <JoinUs />
         <HowItWorks />
         <Testimonials />
+        <FeedbackList />
         <FeedbackForm />
         <FAQs />
         <ContactUs />
