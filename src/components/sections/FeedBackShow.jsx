@@ -36,7 +36,7 @@ function FeedbackSlider() {
         </p>
 
         <h2 className="text-4xl md:text-5xl font-bold relative inline-block">
-          Testimonials
+          Clients <span className="orange">Feedback</span>
           <span className="absolute left-0 top-0 text-6xl md:text-7xl font-bold text-white/5 -z-10">
             Testimonials
           </span>
@@ -110,7 +110,7 @@ function FeedbackSlider() {
                       className={`${
                         star <= Number(item.rating)
                           ? "fill-[#083055] text-[#083055]"
-                          : "text-gray-300"
+                          : "text-[#083055]"
                       }`}
                     />
                   ))}

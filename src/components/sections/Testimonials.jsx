@@ -20,6 +20,8 @@ import img9 from "../../assets/testimonials/9.jpeg";
 import img10 from "../../assets/testimonials/10.jpeg";
 import img11 from "../../assets/testimonials/11.jpeg";
 import img12 from "../../assets/testimonials/12.jpeg";
+import poll from "../../assets/testimonials/poll.jpg";
+
 
 function Testimonials() {
   const prevRef = useRef(null);
@@ -45,6 +47,7 @@ function Testimonials() {
     { id: 10, img: img10, title: "✓ Deal Closed Successfully!", desc: "USA Line delivered" },
     { id: 11, img: img11, title: "✓ Repeat Client Deal!", desc: "Ireland GV setup again" },
     { id: 12, img: img12, title: "✓ Deal Closed Successfully!", desc: "USA Line completed" },
+    { id: 13, img: poll, title: "Our Client Reviews", desc: "Whatsapp Channel Reviews For 100% Trusted" },
   ];
 
   return (

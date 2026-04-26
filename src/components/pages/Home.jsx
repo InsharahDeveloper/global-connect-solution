@@ -12,6 +12,7 @@ import FAQs from "../sections/FAQs";
 import ContactUs from "../sections/ContactUs";
 import Footer from "../sections/Footer";
 import WaMe from "../sections/WaMe";
+import FeedbackForm from "../sections/FeedBackForm";
 
 function Home() {
   const [open, setOpen] = useState(false);
@@ -47,6 +48,7 @@ function Home() {
         <JoinUs />
         <HowItWorks />
         <Testimonials />
+        <FeedbackForm />
         <FAQs />
         <ContactUs />
         <Footer />
