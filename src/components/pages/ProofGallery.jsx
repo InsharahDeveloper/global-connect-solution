@@ -15,9 +15,11 @@ function ClientProofGallery() {
     <>
       <div className="home w-full relative">
         <Navbar setOpen={setOpen} />
-      <Testimonials />
+        <PPageHeading/>
+
         <Sidebar open={open} setOpen={setOpen} />
       </div>
+      <Testimonials />
       <Footer />
     </>
   );

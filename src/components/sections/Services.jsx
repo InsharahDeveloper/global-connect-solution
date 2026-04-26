@@ -1,114 +1,112 @@
 import {
   Phone,
   Globe,
-  Shield,
-  Mail,
-  MessageCircle,
-  Users,
-  CardSim,
-  TvMinimalPlay,
+  PhoneCall,
   ArrowRight,
 } from "lucide-react";
-import "../../App.css"
-
+import "../../App.css";
 
 function Services() {
   const services = [
     {
       icon: <Globe size={28} />,
-      title: "Google Voice (GV)",
-      desc: "Business GV, 2FA Gmail GV, and fully verified GV accounts with replacement warranty.",
-    },
-    {
-      icon: <Mail size={28} />,
-      title: "Gmail Accounts",
-      desc: "USA & mixed country bulk Gmail accounts for business and personal use.",
+      title: "Business Google Voice",
+      desc: "Google Voice is a smart solution for professionals who need secure communication and privacy.",
     },
     {
       icon: <Phone size={28} />,
-      title: "VoIP Services",
-      desc: "TextNow, Talkatone, and TextPlus VoIP solutions for global communication.",
+      title: "Zoom Phone",
+      desc: "Zoom Phone offers cloud-based business calling and seamless team connectivity worldwide.",
     },
     {
-      icon: <MessageCircle size={28} />,
-      title: "Sideline Accounts",
-      desc: "Web login sideline accounts with stable access and reliability.",
+      icon: <PhoneCall size={28} />,
+      title: "Ring Central",
+      desc: "RingCentral offers unified business calling, messaging, and reliable team communication worldwide.",
     },
     {
-      icon: <Users size={28} />,
-      title: "Social Media Accounts",
-      desc: "WhatsApp, Telegram, Instagram, and Twitter accounts for business use.",
+      icon: <PhoneCall size={28} />,
+      title: "Dialer Solutions",
+      desc: "Dialer Solutions offers smart auto-calling, lead management, and efficient business communication systems.",
     },
-    {
-      icon: <TvMinimalPlay size={28} />,
-      title: "YouTube Channels",
-      desc: "Monetized and non-monetized YouTube channels ready for use.",
-    },
-    {
-      icon: <CardSim size={28} />,
-      title: "eSIM Services",
-      desc: "CK eSIM solutions for fast and secure mobile connectivity.",
-    }
   ];
 
   return (
-    <section className="w-full py-16 px-6 md:px-20 service-div relative mt-[50px]">
+    <section className="w-full py-20 px-6 relative service-div">
 
-      <div className="glow absolute top-0 left-0 w-[300px] h-[300px] bg-orange-400/20 blur-[130px] rounded-full  hidden sm:block"></div>
-      <div className="glow absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/40 blur-[130px] rounded-full"></div>
+      {/* Glow */}
+      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-orange-400/20 blur-[130px] rounded-full hidden sm:block"></div>
+      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/30 blur-[130px] rounded-full"></div>
 
-      {/* Heading */}
-      <div className="text-center mb-12">
-        <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-bold font-[Poppins] 2xl:text-6xl">
-          Our <span className="orange">Services</span>
-        </h2>
+      {/* MAIN LAYOUT */}
+      <div className="flex flex-col-reverse lg:flex-row items-start gap-12">
+        {/* LEFT SIDE - SERVICES */}
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 order-1 lg:order-1">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              data-aos="flip-left"
+              className="group relative p-6 rounded-2xl c-card 
+              bg-white/20 backdrop-blur-md
+              shadow-[0_10px_30px_rgba(0,0,0,0.25)]
+              transition-all duration-300
+              hover:-translate-y-2 hover:scale-[1.03]
+              hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)]"
+            >
+              <div className="text-white mb-4 icon">{service.icon}</div>
 
-        <p data-aos="fade-up" className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl 2xl:max-w-5xl">
-          Your trusted partner for premium digital accounts, Google Voice (GV),
-          VoIP services, and global communication solutions.
-        </p>
-      </div>
+              <h3 className="text-xl font-semibold mb-2">
+                {service.title}
+              </h3>
 
-      {/* Grid */}
-      <div className="grid mt-[80px] grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 justify-center ">
-        {services.map((service, index) => (
-          <div
-            data-aos="flip-left"
-            key={index}
-            className="group c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg hover:scale-105 transition"
-          >
-            {/* Icon */}
-            <div className="text-white icon mb-4">
-              {service.icon}
+              <p className="text-sm text-gray-200 leading-relaxed mb-4">
+                {service.desc}
+              </p>
+
+              <button className="py-1 px-4 rounded-full border-2 text-white text-sm
+                hover:bg-orange-400 hover:border-orange-400 transition">
+                Explore More
+              </button>
             </div>
+          ))}
 
-            {/* Title */}
-            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+        </div>
 
-            {/* Description */}
-            <p className="text-md leading-relaxed mb-5">
-              {service.desc}
-            </p>
+        {/* RIGHT SIDE - HEADING */}
+        <div className="w-full self-center flex flex-col text-left order-2 lg:order-2">
+          <h1 data-aos="zoom-in-right" className="max-[320px]:text-[1.4rem] max-[390px]:text-[1.8rem] text-[2.2rem] md:text-[3rem] 2xl:text-6xl font-[Montserrat] font-bold">
 
-            {/* Explore Button */}
-            <button className="py-1 px-3 rounded-[50px] border text-blue font-medium transition duration-300 hover:bg-orange-400 hover:text-white">
-              Explore More
-            </button>
-          </div>
-        ))}
+            Our <span className="text-orange-400">Services</span>
+          </h1>
 
-        {/* Last Grid Card */}
-        <div data-aos="flip-right" className="group sm:col-span-2 lg:col-span-1 see-more c-card p-6 rounded-2xl bg-white/20 backdrop-blur-md shadow-lg hover:scale-105 transition flex flex-col items-center justify-center text-center">
-          <h3 className="text-2xl font-bold mb-3">See More</h3>
-
-          <p className="text-gray-400 mb-5">
-            Discover more premium digital solutions for your business growth.
+          <p
+            data-aos="fade-up"
+            className="text-gray-400 text-[1.1rem] mt-4 max-w-xl 2xl:text-2xl"
+          >
+            At Global Connect Solutions, we specialize in providing premium communication services designed for secure, reliable, and global connectivity. Our featured services include Google Voice, Zoom Phone, and RingCentral, built to help businesses communicate efficiently and grow without limits.
+          </p>
+          <p
+            data-aos="fade-up"
+            className="text-gray-400 text-[1.1rem] mt-4 max-w-xl 2xl:text-2xl"
+          >
+            Whether you are managing teams, running a business, or upgrading your communication system, our solutions are scalable, affordable, and future-ready. Alongside these featured services, we offer a wide range of additional digital solutions to support your business growth.
           </p>
 
-          <button className="flex items-center gap-2 py-2 px-5 rounded-full text-orange-400 hover:bg-orange-400 hover:text-white transition duration-300">
-            View All <ArrowRight size={18} />
-          </button>
+
+          {/* SEE MORE CARD  */}
+          <div
+            data-aos="flip-right"
+            className="group mt-8 c-card w-[fit-content] rounded-full flex flex-col items-center justify-center text-center
+            bg-white/20 backdrop-blur-md
+            shadow-[0_10px_30px_rgba(0,0,0,0.25)]
+            hover:-translate-y-2 hover:scale-[1.03]
+            hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)]
+            transition-all duration-300"
+          >
+            <h3 className="text-xl font-bold px-4 py-2">See More</h3>
+          </div>
+
         </div>
+
       </div>
     </section>
   );

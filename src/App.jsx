@@ -11,6 +11,7 @@ import PrivacyPolicy from "./components/pages/Policy";
 
 import TermsAndConditions from "./components/pages/Terms&Conditions"
 import ClientProofGallery from "./components/pages/ProofGallery";
+import ServicePage from "./components/pages/Services";
 
 function App() {
   useEffect(() => {
@@ -28,7 +29,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-conditions" element={<TermsAndConditions />} />
-        <Route path="/client-proof-gallery" element={<ClientProofGallery />} />
+        <Route path="/trust-wall" element={<ClientProofGallery />} />
+        <Route path="/services" element={<ServicePage />} />
       </Routes>
     </>
   );

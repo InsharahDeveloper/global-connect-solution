@@ -53,12 +53,12 @@ function Footer() {
         <div>
           <h2 data-aos="zoom-in-up" className="text-2xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-3 text-gray-400">
-            <Link to="/"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3 text-[1.1rem]">Home</li></Link>
-            <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3 text-[1.1rem]">Services</li></Link>
-            <Link to="/client-proof-gallery"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3 text-[1.1rem]">Clients Proof Gallery</li></Link>
-            <Link to="/contact"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3 text-[1.1rem]">Contact Us</li></Link>
-            <Link to="/privacy-policy"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3 text-[1.1rem]">Privacy Policy</li></Link>
-            <Link to="/terms-conditions"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer transition-all w-[fit-content] hover:ms-3 text-[1.1rem]">Terms & Conditions</li></Link>
+            <Link to="/"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer footer-navs w-[fit-content] hover:ms-3 text-[1.1rem]">Home</li></Link>
+            <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer footer-navs w-[fit-content] hover:ms-3 text-[1.1rem]">Services</li></Link>
+            <Link to="/trust-wall"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer footer-navs w-[fit-content] hover:ms-3 text-[1.1rem]">Clients Trust Wall</li></Link>
+            <Link to="/contact"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer footer-navs w-[fit-content] hover:ms-3 text-[1.1rem]">Contact Us</li></Link>
+            <Link to="/privacy-policy"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer footer-navs w-[fit-content] hover:ms-3 text-[1.1rem]">Privacy Policy</li></Link>
+            <Link to="/terms-conditions"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer footer-navs w-[fit-content] hover:ms-3 text-[1.1rem]">Terms & Conditions</li></Link>
           </ul>
         </div>
 

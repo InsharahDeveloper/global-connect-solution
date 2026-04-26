@@ -1,5 +1,14 @@
 import "../../App.css";
-import img1 from "../../assets/testimonials/1.jpeg";
+import { useRef, useState, useEffect } from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import img1 from "../../assets/testimonials/13.jpeg";
 import img2 from "../../assets/testimonials/2.jpeg";
 import img3 from "../../assets/testimonials/3.jpeg";
 import img4 from "../../assets/testimonials/4.jpeg";
@@ -13,137 +22,119 @@ import img11 from "../../assets/testimonials/11.jpeg";
 import img12 from "../../assets/testimonials/12.jpeg";
 
 function Testimonials() {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    if (prevRef.current && nextRef.current) {
+      setInit(true);
+    }
+  }, []);
+
   const reviews = [
-    {
-      id: 1,
-      img: img1,
-      title: "✓ Deal Closed Successfully!",
-      desc: "2 Business GV + 2 Personal GV successfully delivered",
-    },
-    {
-      id: 2,
-      img: img2,
-      title: "✓ Deal Closed Successfully!",
-      desc: "1 Business Google Voice Monthly Calling Setup successfully done for an Indian client",
-    },
-    {
-      id: 3,
-      img: img3,
-      title: "✓ Repeat Client Deal Completed!",
-      desc: `Client previously purchased 1 Ireland Google Voice (Business Line) ● Then successfully bought 2 more Business GV Lines`,
-    },
-    {
-      id: 4,
-      img: img4,
-      title: "✓ Deal Closed Successfully!",
-      desc: "Australia Line (+1 Code) setup done for a Pakistani client",
-    },
-    {
-      id: 5,
-      img: img5,
-      title: "✓ Deal Closed Successfully!",
-      desc: "Google Voice (801 Area Code) successfully delivered",
-    },
-    {
-      id: 6,
-      img: img6,
-      title: "✓ Repeat Client Deal Completed!",
-      desc: ` Ireland Google Voice Line completed for our old repeat client`,
-    },
-    {
-      id: 7,
-      img: img7,
-      title: "✓ Deal Closed Successfully!",
-      desc: "`Germany Business Number Sold ● Another successful deal with our Indian client",
-    },
-    {
-      id: 8,
-      img: img8,
-      title: "✓ Deal Closed Successfully!",
-      desc: " Google Voice (931 Area Code) successfully delivered",
-    },
-    {
-      id: 9,
-      img: img9,
-      title: "✓ Deal Closed Successfully!",
-      desc: "Australia Line Setup completed for an Indian client",
-    },
-    {
-      id: 10,
-      img: img10,
-      title: "✓ Deal Closed Successfully!",
-      desc: " Australia Line (+1 Code) setup done for a Indian Client",
-    },
-    {
-      id: 11,
-      img: img11,
-      title: "✓ Repeat Client Deal Completed!",
-      desc: "Ireland Google Voice Line successfully setup for our repeat client",
-    },
-    {
-      id: 12,
-      img: img12,
-      title: "✓ Deal Closed Successfully!",
-      desc: "USA Line (+1 Code) setup done for a Indian Client",
-    },
+    { id: 1, img: img1, title: "✓ Deal Closed Successfully!", desc: "2 Business GV + 2 Personal GV delivered" },
+    { id: 2, img: img2, title: "✓ Deal Closed Successfully!", desc: "Google Voice setup done for Indian client" },
+    { id: 3, img: img3, title: "✓ Repeat Client Deal!", desc: "Client bought multiple GV lines" },
+    { id: 4, img: img4, title: "✓ Deal Closed Successfully!", desc: "Australia Line setup completed" },
+    { id: 5, img: img5, title: "✓ Deal Closed Successfully!", desc: "801 Area Code delivered" },
+    { id: 6, img: img6, title: "✓ Repeat Client Deal!", desc: "Ireland GV again delivered" },
+    { id: 7, img: img7, title: "✓ Deal Closed Successfully!", desc: "Germany Business Number sold" },
+    { id: 8, img: img8, title: "✓ Deal Closed Successfully!", desc: "931 Area Code delivered" },
+    { id: 9, img: img9, title: "✓ Deal Closed Successfully!", desc: "Australia setup done" },
+    { id: 10, img: img10, title: "✓ Deal Closed Successfully!", desc: "USA Line delivered" },
+    { id: 11, img: img11, title: "✓ Repeat Client Deal!", desc: "Ireland GV setup again" },
+    { id: 12, img: img12, title: "✓ Deal Closed Successfully!", desc: "USA Line completed" },
   ];
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 md:px-10 lg:px-20 relative overflow-hidden">
+    <section className="w-full relative py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-20 relative overflow-hidden">
 
       {/* Glow */}
-      <div className="glow absolute top-0 left-0 w-[300px] h-[300px] bg-orange-300/20 blur-[130px] rounded-full"></div>
-      <div className="glow absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/10 blur-[130px] rounded-full"></div>
+      <div className="absolute top-0 left-0 w-[250px] sm:w-[300px] h-[250px] sm:h-[300px] bg-orange-300/20 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-[250px] sm:w-[300px] h-[250px] sm:h-[300px] bg-orange-400/10 blur-[120px] rounded-full"></div>
 
       {/* Heading */}
-      <div className="text-center mb-14 relative z-10">
-        <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-bold font-[Poppins] 2xl:text-6xl">
-          Clients <span className="orange">Proof</span> Gallery
+      <div className="text-center mb-10 sm:mb-14 relative z-10">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-[Poppins]">
+          Clients <span className="text-orange-400">Proof</span> Gallery
         </h2>
 
-        <p data-aos="fade-up" className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl">
-          Our results speak louder than promises. Trusted by clients worldwide with verified screenshots and positive feedback.
+        <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm sm:text-base">
+          Trusted by clients worldwide with verified results.
         </p>
       </div>
 
-      {/* Masonry Grid */}
-      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-5 gap-6 space-y-6 relative z-10">
 
+
+      {/* Swiper */}
+      <Swiper
+      className="relative"
+        modules={[Autoplay, Pagination, Navigation]}
+        spaceBetween={18}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+
+        navigation={
+          init
+            ? {
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }
+            : false
+        }
+
+        onBeforeInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+        }}
+
+    breakpoints={{
+  0: { slidesPerView: 1 },
+  480: { slidesPerView: 1.1 },
+  640: { slidesPerView: 1.5 },
+  768: { slidesPerView: 2 },
+  1024: { slidesPerView:3 },
+  1240: { slidesPerView: 4 },
+  1500: { slidesPerView: 5 }, // 👈 XL / 2XL screens
+}}
+      >
         {reviews.map((item) => (
-          <div
-            data-aos="flip-left"
-            key={item.id}
-            className={`p-1 rounded-2xl t-card shadow-xl group
-      
-      `}
-          >
-            {/* Image Box */}
-            <div className="relative overflow-hidden rounded-xl">
+          <SwiperSlide key={item.id}>
+            <div className="p-1 t-card shadow-xl group">
 
-              <img
-                src={item.img}
-                alt={item.title}
-                className="w-full object-cover rounded-xl group-hover:scale-110 transition duration-700"
-              />
+<div className="relative overflow-hidden h-[600px] sm:h-[580px] md:h-[600px] lg:h-[550px]">
+                <img
+                  src={item.img}
+                  alt={item.title}
+className="w-full h-full object-cover group-hover:scale-110 transition duration-700"                />
 
-              {/* Overlay */}
-              <div className="absolute tes-overlay inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center px-4">
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 active:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center px-3 sm:px-4">
 
-                <h3 className="text-white text-lg font-bold">
-                  {item.title}
-                </h3>
+                  <h3 className="text-white text-base sm:text-lg font-bold">
+                    {item.title}
+                  </h3>
 
-                <p className="text-gray-300 text-sm mt-2 leading-6">
-                  {item.desc}
-                </p>
+                  <p className="text-gray-300 text-xs sm:text-sm mt-2">
+                    {item.desc}
+                  </p>
+
+                </div>
 
               </div>
 
             </div>
-          </div>
+          </SwiperSlide>
         ))}
+      </Swiper>
+            {/* Navigation Buttons */}
+      
 
-      </div>
     </section>
   );
 }

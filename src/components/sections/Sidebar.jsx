@@ -109,7 +109,7 @@ function Sidebar({ open, setOpen }) {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Clients Proof Gallery", path: "/client-proof-gallery" },
+    { name: "Clients Trust Wall", path: "/trust-wall" },
     { name: "Contact Us", path: "/contact" },
     { name: "Privacy Policy", path: "/privacy-policy" },
     { name: "Terms & Conditions", path: "/terms-conditions" },
