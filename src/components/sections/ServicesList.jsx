@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Headphones, Globe, Server, Phone , PhoneCall , MonitorCloud} from "lucide-react";
+import { Headphones, Globe, Server, Phone , PhoneCall , MonitorCloud , Mail} from "lucide-react";
 
 function ServicesList() {
   const services = [
@@ -54,7 +54,7 @@ function ServicesList() {
         },
         {
           name: "Others",
-          available_countries: ["Europe", "Ireland", "Spain", "Belgium", "Switzerland", "Denmark", "France", "Italy", "Netherlands", "Sweden"],
+          available_countries: ["Europe", "Ireland", "Spain", "Belgium", "Switzerland", "Denmark", "France", "Italy", "Netherlands", "Sweden" , "Germany"],
           price: "$100/monthly",
           warranty: "30 days replacement warrant. If any issue occurs we will resolve it or replace the account.",
           advantages: [
@@ -119,6 +119,49 @@ function ServicesList() {
       definition : "Zoom Phone is a cloud-based VoIP business phone system by Zoom that offers voice calling, SMS, call routing, and unified communication for modern businesses.",
       position : "Out of Stock"
     },
+    {
+      id: "textnow",
+      icon: Mail,
+      title: "Text Now",
+      definition : "TextNow is a VoIP (Voice over Internet Protocol) application that provides users with a phone number, mainly for calling and texting over WiFi or mobile data. It allows users to send messages and make voice calls without using a traditional SIM-based phone service.",
+       price: "$5 One time pay",
+      warranty: "No Warranty after successfull login.",
+      advantages: [
+        "Clean & Working Accounts.",
+        "Fast & Easy Login.",
+        "Perfect for verification, messaging and general online use."
+      ],
+      order_message: "Hello! I want to buy textnow."
+      
+    },
+    {
+      id: "textfree",
+      icon: Mail,
+      title: "Text Free",
+      definition : "Text Free is a VoIP (Voice over Internet Protocol) application that provides users with a phone number, mainly for calling and texting over WiFi or mobile data. It allows users to send messages and make voice calls without using a traditional SIM-based phone service.",
+       price: "$5 One time pay",
+      warranty: "No Warranty after successfull login.",
+      advantages: [
+        "Clean & Working Accounts.",
+        "Fast & Easy Login.",
+        "Perfect for verification, messaging and general online use."
+      ],
+      order_message: "Hello! I want to buy textfree"
+    },
+    {
+      id: "textplus",
+      icon: Mail,
+      title: "Text Plus",
+      definition : "Text Plus is a VoIP (Voice over Internet Protocol) application that provides users with a phone number, mainly for calling and texting over WiFi or mobile data. It allows users to send messages and make voice calls without using a traditional SIM-based phone service.",
+       price: "$5 One time pay",
+      warranty: "No Warranty after successfull login.",
+      advantages: [
+        "Clean & Working Accounts.",
+        "Fast & Easy Login.",
+        "Perfect for verification, messaging and general online use."
+      ],
+      order_message: "Hello! I want to buy textfree"
+    },
   ];
 
   // ✅ FIXED INITIAL STATE
@@ -160,7 +203,7 @@ function ServicesList() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
 
           {/* LEFT SIDE */}
-          <div className="bg-orange-400 rounded-2xl p-4 space-y-3">
+          <div className="bg-orange-400 max-h-[94vh] service-left rounded-2xl p-4 space-y-3">
             {services.map((service) => (
               <button
                 key={service.id}

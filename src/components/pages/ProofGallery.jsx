@@ -5,6 +5,8 @@ import PrivacyContent from "../sections/PrivacyContent";
 import Footer from "../sections/Footer"
 import Testimonials from "./../sections/Testimonials"
 import PPageHeading from "../sections/PPageHeading";
+import FeedbackForm from "../sections/FeedBackForm";
+import FeedbackList from "../sections/FeedBackShow";
 
 
 
@@ -20,6 +22,8 @@ function ClientProofGallery() {
         <Sidebar open={open} setOpen={setOpen} />
       </div>
       <Testimonials />
+      <FeedbackList />
+      <FeedbackForm />
       <Footer />
     </>
   );

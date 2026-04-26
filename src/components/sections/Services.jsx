@@ -5,6 +5,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 function Services() {
   const services = [
@@ -34,8 +35,8 @@ function Services() {
     <section className="w-full py-20 px-6 relative service-div">
 
       {/* Glow */}
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-orange-400/20 blur-[130px] rounded-full hidden sm:block"></div>
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/30 blur-[130px] rounded-full"></div>
+      <div className="glow absolute top-0 left-0 w-[300px] h-[300px] bg-orange-400/20 blur-[130px] rounded-full hidden sm:block"></div>
+      <div className="glow absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/30 blur-[130px] rounded-full"></div>
 
       {/* MAIN LAYOUT */}
       <div className="flex flex-col-reverse lg:flex-row items-start gap-12">
@@ -64,7 +65,9 @@ function Services() {
 
               <button className="py-1 px-4 rounded-full border-2 text-white text-sm
                 hover:bg-orange-400 hover:border-orange-400 transition">
+                  <Link to="/services">
                 Explore More
+                </Link>
               </button>
             </div>
           ))}
@@ -93,7 +96,8 @@ function Services() {
 
 
           {/* SEE MORE CARD  */}
-          <div
+          <Link
+            to="/services"
             data-aos="flip-right"
             className="group mt-8 c-card w-[fit-content] rounded-full flex flex-col items-center justify-center text-center
             bg-white/20 backdrop-blur-md
@@ -102,8 +106,8 @@ function Services() {
             hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)]
             transition-all duration-300"
           >
-            <h3 className="text-xl font-bold px-4 py-2">See More</h3>
-          </div>
+           <h3 className="text-xl font-bold px-4 py-2">See More</h3>
+          </Link>
 
         </div>
 

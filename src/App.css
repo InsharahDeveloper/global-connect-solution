@@ -869,6 +869,24 @@ body::selection {
   position: relative;
 }
 
+.service-left{
+  overflow-y: scroll;
+}
+
+.service-left::-webkit-scrollbar{
+  background-color: #08305500;
+  width: 10px;
+}
+
+.service-left::-webkit-scrollbar-thumb{
+  background-color: var(--darkbg);
+}
+
+.dark-theme .service-left::-webkit-scrollbar-thumb{
+  background-color: var(--lightbg);
+}
+
+
 .service-info::before{
   content: "";
   position: absolute;
