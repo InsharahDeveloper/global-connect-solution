@@ -15,6 +15,12 @@ import ServicePage from "./components/pages/Services";
 
 function App() {
   useEffect(() => {
+  const s = document.createElement("script");
+  s.src = "https://id-preview--f42c959b-6cda-481a-928c-e545211b9698.lovable.app/embed.js";
+  s.async = true;
+  document.body.appendChild(s);
+}, []);
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       offset: 100,
@@ -22,12 +28,6 @@ function App() {
     });
   }, []);
 
-  useEffect(() => {
-  const s = document.createElement("script");
-  s.src = "https://id-preview--f42c959b-6cda-481a-928c-e545211b9698.lovable.app/embed.js";
-  s.async = true;
-  document.body.appendChild(s);
-}, []);
 
   return (
     <>
