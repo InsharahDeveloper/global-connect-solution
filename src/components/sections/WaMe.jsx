@@ -3,7 +3,7 @@ import wa_logo from "../../assets/whatsapp_logo.png";
 function WaMe() {
     return (
         <>
-            <div className="fixed bottom-3 right-3 z-[100] ">
+            <div className="fixed bottom-3 left-3 z-[100] ">
                 <a href="https://wa.me/+923000584969" target="_blank" className="flex items-center gap-2">
 
                     {/* Pop Message */}
