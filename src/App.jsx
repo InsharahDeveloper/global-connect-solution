@@ -23,7 +23,7 @@ useEffect(() => {
     script.async = true;
 
     script.onload = () => console.log("AI Sales Agent loaded");
-    script.onerror = () => console.error("AI Sales Agent failed to load");
+    script.onerror = (e) => console.error("AI Sales Agent failed to load" , e);
 
     document.body.appendChild(script);
   }, []);
