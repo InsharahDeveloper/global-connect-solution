@@ -19,7 +19,7 @@ useEffect(() => {
 
     const script = document.createElement("script");
     script.id = "ai-sales-agent-embed";
-    script.src = "https://project--f42c959b-6cda-481a-928c-e545211b9698.lovable.app/embed.js";
+    script.src = "https://your-24-7-biz-pal.lovable.app/embed.js";
     script.async = true;
 
     script.onload = () => console.log("AI Sales Agent loaded");
