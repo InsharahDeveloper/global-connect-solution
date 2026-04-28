@@ -14,12 +14,19 @@ import ClientProofGallery from "./components/pages/ProofGallery";
 import ServicePage from "./components/pages/Services";
 
 function App() {
-  useEffect(() => {
-  const s = document.createElement("script");
-  s.src = "https://id-preview--f42c959b-6cda-481a-928c-e545211b9698.lovable.app/embed.js";
-  s.async = true;
-  document.body.appendChild(s);
-}, []);
+useEffect(() => {
+    if (document.getElementById("ai-sales-agent-embed")) return;
+
+    const script = document.createElement("script");
+    script.id = "ai-sales-agent-embed";
+    script.src = "https://project--f42c959b-6cda-481a-928c-e545211b9698.lovable.app/embed.js";
+    script.async = true;
+
+    script.onload = () => console.log("AI Sales Agent loaded");
+    script.onerror = () => console.error("AI Sales Agent failed to load");
+
+    document.body.appendChild(script);
+  }, []);
   useEffect(() => {
     AOS.init({
       duration: 1000,
