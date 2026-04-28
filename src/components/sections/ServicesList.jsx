@@ -16,6 +16,7 @@ function ServicesList() {
           advantages: [
             "Supports 1-5 users.",
             "Unlimited inbound and outbound calling.",
+            "First Login then Payment.",
           ],
           order_message: "Hello! I want to buy Business GV For USA"
         },
@@ -27,6 +28,7 @@ function ServicesList() {
             "Unlimited calling.",
             "Your choice of area code.",
             "Support for upto 4-5 users.",
+            "First Login then Payment.",
           ],
           order_message: "Hello! I want to buy Business GV For UK"
         },
@@ -38,6 +40,7 @@ function ServicesList() {
             "Unlimited calling.",
             "Your choice of area code.",
             "Support for upto 1-5 users.",
+            "First Login then Payment.",
           ],
           order_message: "Hello! I want to buy Business GV For Canada"
         },
@@ -49,19 +52,57 @@ function ServicesList() {
             "Unlimited calling.",
             "Your choice of area code.",
             "Support for upto 1-5 users.",
+            "First Login then Payment.",
           ],
           order_message: "Hello! I want to buy Business GV For Australia"
         },
         {
+          name: "Italy",
+          price: "$100/monthly",
+          warranty: "30 days replacement warrant. If any issue occurs we will resolve it or replace the account.",
+          advantages: [
+            "Unlimited calling.",
+            "Your choice of area code.",
+            "Support for upto 1-5 users.",
+            "First Login then Payment.",
+          ],
+          order_message: "Hello! I want to buy Business GV For Italy"
+        },
+        {
+          name: "Germany",
+          price: "$100/monthly",
+          warranty: "30 days replacement warrant. If any issue occurs we will resolve it or replace the account.",
+          advantages: [
+            "Unlimited calling.",
+            "Your choice of area code.",
+            "Support for upto 1-5 users.",
+            "First Login then Payment.",
+          ],
+          order_message: "Hello! I want to buy Business GV For Germany"
+        },
+        {
+          name: "Ireland",
+          price: "$100/monthly",
+          warranty: "30 days replacement warrant. If any issue occurs we will resolve it or replace the account.",
+          advantages: [
+            "Unlimited calling.",
+            "Your choice of area code.",
+            "Support for upto 1-5 users.",
+            "First Login then Payment.",
+          ],
+          order_message: "Hello! I want to buy Business GV For Ireland."
+        },
+        {
           name: "Others",
-          available_countries: ["Europe", "Ireland", "Spain", "Belgium", "Switzerland", "Denmark", "France", "Italy", "Netherlands", "Sweden" , "Germany"],
+          available_countries: ["Europe", "Spain", "Belgium", "Switzerland", "Denmark", "France", "Netherlands", "Sweden"],
           price: "$100/monthly",
           warranty: "30 days replacement warrant. If any issue occurs we will resolve it or replace the account.",
           advantages: [
             "Unlimited calling.",
             "Support for upto 1-5 users.",
+            "First Login then Payment.",
           ],
-          order_message: "Hello! I want to buy Business GV for Europe."
+          order_message: "Hello! I want to buy Business GV for __________ Country."
         },
       ],
     },
@@ -259,10 +300,10 @@ function ServicesList() {
                       <button
                         key={c.name}
                         onClick={() => setSelectedCountryIndex(i)}
-                        className={`px-4 py-1 rounded-full border
+                        className={`px-4 py-1 rounded-full border-2 font-semibold
                         ${
                           selectedCountryIndex === i
-                            ? "bg-orange-500 text-white scale-[1.2]"
+                            ? "bg-orange-400 text-white scale-[1.2]"
                             : "bg-none"
                         }`}
                       >
@@ -284,7 +325,7 @@ function ServicesList() {
                         {activeData.available_countries.map((country, i) => (
                           <span
                             key={i}
-                            className="px-3 py-1 border rounded-full text-sm"
+                            className="px-3 py-1 text-white bg-orange-400 font-semibold border-2 border-orange-400 rounded-full text-sm"
                           >
                             {country}
                           </span>

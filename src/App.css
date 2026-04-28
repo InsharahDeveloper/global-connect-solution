@@ -896,6 +896,20 @@ body::selection {
   left: 0px;
 }
 
+.serving{
+  color: var(--darktext);
+  background-color: rgb(255, 145, 0);
+}
+
+.serving button{
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.serving button:hover{
+  background-color: rgba(255, 255, 255, 0.26);
+}
+
 @keyframes blink {
   0% {
     content: "";

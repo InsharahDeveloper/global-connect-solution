@@ -29,7 +29,7 @@ function Logo() {
       <img
         src={darkMode ? darklogo : lightlogo}
         alt="logo"
-        className="w-12 sm:w-14 2xl:w-22 hhhhh"
+        className="w-12 sm:w-14 2xl:w-18 hhhhh"
       />
 
       <h2 className="font-semibold text-sm sm:text-lg lg:text-2xl 2xl:text-3xl lt">
