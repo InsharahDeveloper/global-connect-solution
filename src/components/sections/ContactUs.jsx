@@ -86,17 +86,7 @@ function ContactUs() {
               </div>
               <div>
                 <p className="text-sm text-gray-400 2xl:text-xl ptf-name">Email</p>
-                <p className="text-white font-medium text-blue 2xl:text-xl ptf-info">pending@gmail.com</p>
-              </div>
-            </div>
-
-            <div data-aos="zoom-in" className="flex items-center sm:gap-4 gap-2 ptf">
-              <div className="p-3 rounded-xl bg-orange-500/10 text-orange-400">
-                <Send size={22} className="in" />
-              </div>
-              <div>
-                <p className="text-sm text-gray-400 2xl:text-xl ptf-name">Telegram</p>
-                <p className="text-white font-medium  text-blue 2xl:text-xl ptf-info">@GCS_Communication</p>
+                <p className="text-white font-medium text-blue 2xl:text-xl ptf-info">info.trustedgvstore786@gmail.com</p>
               </div>
             </div>
 
@@ -117,20 +107,9 @@ function ContactUs() {
     <span>Chat Now</span>
   </a>
 
-  {/* Telegram */}
-  <a
-    href="https://t.me/GCS_Communication"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex-1 max-[500px]:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-400 text-white font-medium hover:scale-105 transition"
-  >
-    <Send size={20} className="ic" />
-    <span>Telegram</span>
-  </a>
-
   {/* Email */}
   <a
-    href="mailto:pending@gmail.com"
+    href="mailto:info.trustedgvstore786@gmail.com"
     className="flex-1 max-[500px]:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-400 text-white font-medium hover:scale-105 transition"
   >
     <Mail size={20} className="ic" />

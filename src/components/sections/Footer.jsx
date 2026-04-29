@@ -77,12 +77,7 @@ function Footer() {
 
             <div data-aos="zoom-in-up" className="flex items-center gap-3 text-[1.1rem]">
               <Mail size={18} className="text-orange-400" />
-              <span>pending@gmail.com</span>
-            </div>
-
-            <div data-aos="zoom-in-up" className="flex items-center gap-3 text-[1.1rem]">
-              <Send size={18} className="text-orange-400" />
-              <span>@GCS_Communication</span>
+              <span>info.trustedgvstore786@gmail.com</span>
             </div>
 
           </div>
@@ -97,7 +92,7 @@ function Footer() {
         </p>
 
         {/* Social */}
-        <div className="flex flex-col items-center md:items-end gap-2 mt-4 md:mt-0">
+        <div className="flex flex-col lg:mr-20 items-center md:items-end gap-2 mt-4 md:mt-0">
 
           <p className="text-gray-400 text-sm">Follow Us</p>
 
@@ -141,7 +136,7 @@ function Footer() {
 
       {/* Back to top */}
       <div
-        className="absolute bottom-6 right-6 bg-orange-500 p-3 rounded-full cursor-pointer hover:scale-110 transition"
+        className="absolute bottom-6 lg:bottom-25 right-6 bg-orange-500 p-3 rounded-full cursor-pointer hover:scale-110 transition"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <ArrowUp size={18} />
