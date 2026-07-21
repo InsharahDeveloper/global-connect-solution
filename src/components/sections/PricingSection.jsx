@@ -282,12 +282,13 @@ export default function PricingSection() {
             no={3}
           >
             <div className="mb-4.5">
-              <LcdPrice value="$70" unit="/ month per acc" />
+              <LcdPrice value="$50" unit="/ month per acc" />
             </div>
             <p className="mb-4.5 text-[13px] leading-relaxed text-slate-400">
               Zoom Phone offers cloud-based business calling and seamless team connectivity worldwide.
             </p>
             <ul className="mb-5 list-none p-0">
+              <Feature dot="bg-orange-400">Country : USA & Canada</Feature>
               <Feature dot="bg-orange-400">Unlimited Calling</Feature>
               <Feature dot="bg-orange-400">1 Month Replacement Warranty</Feature>
               <Feature dot="bg-orange-400">First login , then pay</Feature>
