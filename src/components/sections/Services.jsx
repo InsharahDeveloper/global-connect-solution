@@ -83,13 +83,13 @@ function Services() {
 
           <p
             data-aos="fade-up"
-            className="text-gray-400 text-[1.1rem] mt-4 max-w-xl 2xl:text-2xl"
+            className="text-gray-500 text-[1.1rem] mt-4 max-w-xl 2xl:text-2xl"
           >
             At Global Connect Solutions, we specialize in providing premium communication services designed for secure, reliable, and global connectivity. Our featured services include Google Voice, Zoom Phone, and RingCentral, built to help businesses communicate efficiently and grow without limits.
           </p>
           <p
             data-aos="fade-up"
-            className="text-gray-400 text-[1.1rem] mt-4 max-w-xl 2xl:text-2xl"
+            className="text-gray-500 text-[1.1rem] mt-4 max-w-xl 2xl:text-2xl"
           >
             Whether you are managing teams, running a business, or upgrading your communication system, our solutions are scalable, affordable, and future-ready. Alongside these featured services, we offer a wide range of additional digital solutions to support your business growth.
           </p>

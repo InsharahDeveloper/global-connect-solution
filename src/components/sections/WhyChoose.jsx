@@ -15,13 +15,13 @@ function WhyChoose({scrollToServices}) {
                     Why <span className="orange">Choose</span> Us
                 </h1>
 
-                <p data-aos="zoom-out-right" className="text-gray-400 text-[1rem] md:text-[1.1rem] leading-6 mb-4 mt-4 2xl:text-2xl 2xl:leading-[25px]">
+                <p data-aos="zoom-out-right" className="text-gray-500 text-[1rem] md:text-[1.1rem] leading-6 mb-4 mt-4 2xl:text-2xl 2xl:leading-[25px]">
                     At Global Connect Solution, we focus on delivering reliable digital
                     services with professionalism, speed, and security. Our goal is to help
                     individuals and businesses connect globally without hassle.
                 </p>
 
-                <p data-aos="zoom-out-right" className="text-gray-400 text-[1rem] md:text-[1.1rem] leading-6 mb-6 2xl:text-2xl">
+                <p data-aos="zoom-out-right" className="text-gray-500 text-[1rem] md:text-[1.1rem] leading-6 mb-6 2xl:text-2xl">
                     From quick response times to dependable support, every service is designed
                     to create trust, save time, and provide long-term value for our clients.
                 </p>

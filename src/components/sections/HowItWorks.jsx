@@ -45,7 +45,7 @@ function HowItWorks() {
           Easy & <span className="orange">Fast</span>  Process
         </h2>
 
-        <p data-aos="fade-up" className="text-gray-400 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl">
+        <p data-aos="fade-up" className="text-gray-500 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl">
           We make everything simple, secure, and fast so you can grow without delays.
         </p>
       </div>

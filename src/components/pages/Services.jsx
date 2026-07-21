@@ -6,6 +6,7 @@ import Footer from "../sections/Footer"
 import Testimonials from "./../sections/Testimonials"
 import SPageHeading from "../sections/SPageHeading";
 import ServicesList from "../sections/ServicesList";
+import HeaderCarousel from "../sections/HeaderCarousel";
 
 
 
@@ -14,7 +15,8 @@ function ServicePage() {
 
   return (
     <>
-      <div className="home w-full relative">
+      <div className="w-full relative">
+        <HeaderCarousel />
         <Navbar setOpen={setOpen} />
         <SPageHeading/>
 

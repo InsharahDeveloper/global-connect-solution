@@ -53,7 +53,7 @@ function ContactUs() {
         <h2 data-aos="fade-right" className="text-3xl sm:text-4xl md:text-5xl font-bold 2xl:text-6xl ">
           Contact <span className="orange">Us</span>
         </h2>
-        <p data-aos="fade-up" className="mt-3 text-sm sm:text-base text-gray-400 max-w-2xl mx-auto 2xl:text-2xl 2xl:max-w-5xl">
+        <p data-aos="fade-up" className="mt-3 text-sm sm:text-base text-gray-500 max-w-2xl mx-auto 2xl:text-2xl 2xl:max-w-5xl">
           Have questions or ready to place an order? Our support team is here to help you anytime.
         </p>
       </div>
@@ -64,7 +64,7 @@ function ContactUs() {
         {/* Left Side Info */}
         <div className="rounded-2xl order-last p-0 sm:p-8 space-y-6 ">
           <h3 data-aos="fade-right" className="text-2xl font-semibold orange 2xl:text-5xl">Get In Touch</h3>
-          <p data-aos="fade-right" className="text-gray-400 leading-7 2xl:text-2xl">
+          <p data-aos="fade-right" className="text-gray-500 leading-7 2xl:text-2xl">
             Reach out to us for pricing, support, bulk orders, or custom service requests.
           </p>
 
@@ -86,7 +86,7 @@ function ContactUs() {
               </div>
               <div>
                 <p className="text-sm text-gray-400 2xl:text-xl ptf-name">Email</p>
-                <p className="text-white font-medium text-blue 2xl:text-xl ptf-info">info.trustedgvstore786@gmail.com</p>
+                <p className="text-white font-medium text-blue 2xl:text-xl ptf-info">contact@globalconnectsolution.store</p>
               </div>
             </div>
 
@@ -109,7 +109,7 @@ function ContactUs() {
 
   {/* Email */}
   <a
-    href="mailto:info.trustedgvstore786@gmail.com"
+    href="mailto:contact@globalconnectsolution.store"
     className="flex-1 max-[500px]:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-400 text-white font-medium hover:scale-105 transition"
   >
     <Mail size={20} className="ic" />

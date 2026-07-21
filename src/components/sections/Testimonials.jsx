@@ -63,7 +63,7 @@ function Testimonials() {
           Clients <span className="text-orange-400">Proof</span> Gallery
         </h2>
 
-        <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm sm:text-base">
+        <p className="text-gray-500 mt-3 max-w-2xl mx-auto text-sm sm:text-base">
           Trusted by clients worldwide with verified results.
         </p>
       </div>

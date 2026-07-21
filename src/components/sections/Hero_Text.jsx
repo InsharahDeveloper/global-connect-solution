@@ -20,7 +20,7 @@ function Hero_Text({ scrollToServices }) {
         </span>
       </h1>
 
-      <p data-aos="fade-right" className="text-gray-400 2xl:text-2xl 2xl:max-w-5xl text-sm sm:text-[1.4rem] lg:text-lg max-w-xl mx-auto min[913]:mx-0 2xl:mx-0">
+      <p data-aos="fade-right" className="text-gray-500 2xl:text-2xl 2xl:max-w-5xl text-sm sm:text-[1.4rem] lg:text-lg max-w-xl mx-auto min[913]:mx-0 2xl:mx-0">
         Premium Google Voice, Gmail, eSIM & Digital Services trusted by clients worldwide.
       </p>
 

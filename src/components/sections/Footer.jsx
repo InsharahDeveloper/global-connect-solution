@@ -71,13 +71,25 @@ function Footer() {
           <div className="space-y-4 text-gray-400">
 
             <div data-aos="zoom-in-up" className="flex items-center gap-3 text-[1.1rem]">
-              <Phone size={18} className="text-orange-400" />
-              <span>+92 300 0584969</span>
+              <a
+                href="https://wa.me/923000584969"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center items-center gap-2">
+                <Phone size={18} className="text-orange-400" />
+                <span>+92 300 0584969</span>
+              </a>
             </div>
 
             <div data-aos="zoom-in-up" className="flex items-center gap-3 text-[1.1rem]">
-              <Mail size={18} className="text-orange-400" />
-              <span>info.trustedgvstore786@gmail.com</span>
+              <a
+                href="mailto:contact@globalconnectsolution.store"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center items-center gap-2">
+                <Mail size={18} className="text-orange-400" />
+                <span>contact@globalconnectsolution.store</span>
+                </a>
             </div>
 
           </div>

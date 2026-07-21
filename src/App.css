@@ -188,6 +188,19 @@ body::selection {
   background-color: var(--lightbg);
 }
 
+.dark-theme .cardshell{
+  border: 2px solid var(--primarybg);
+}
+
+.cardshell{
+  transition: .5s;
+}
+
+.cardshell:hover{
+  scale: 1.03;
+  box-shadow: 1px 1px 20px rgba(1, 21, 77, 0.466);
+}
+
 .buttons .wa_me::before {
   content: "";
   position: absolute;
@@ -467,20 +480,45 @@ body::selection {
   position: relative;
 }
 
+.h-carousel{
+  margin: 0px auto;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgba(255, 145, 0, 0.815);
+  color: var(--lighttext);
+  cursor: text;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+
+}
+
 .dark-theme .carousel {
   background-color: var(--lightbg);
+  color: var(--lighttext);
+}
+
+.dark-theme .h-carousel {
+  background-color: rgb(255, 145, 0);
   color: var(--lighttext);
 }
 
 .carousel .group {
   display: flex;
   flex-shrink: 0;
-  /* Bohat zaroori: Taake group chota na ho */
   min-width: 100%;
-  /* Har group container ki poori width le */
   justify-content: space-around;
-  /* Ya barabar spacing */
 }
+
+.h-carousel .group {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  justify-content: space-around;
+}
+
 
 .carousel .card {
   height: 2em;
@@ -928,6 +966,16 @@ body::selection {
   }
 }
 
+
+@media (min-width : 1000px) {
+  .cardshel3{
+  transform: perspective(800px) rotateY(20deg);
+}
+.cardshel1{
+  transform: perspective(1000px) rotateY(-20deg);
+}
+  
+}
 
 @media (max-width : 1025px),
 (min-width : 800px) {

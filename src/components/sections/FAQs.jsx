@@ -116,7 +116,7 @@ function FAQs() {
             Frequently Asked <span className="orange">Questions</span>
           </h2>
 
-          <p data-aos="fade-up" className="text-gray-400 mt-4 leading-7 2xl:text-2xl 2xl:leading-9">
+          <p data-aos="fade-up" className="text-gray-500 mt-4 leading-7 2xl:text-2xl 2xl:leading-9">
             Find quick answers about our premium digital services, delivery
             process, warranties, and support.
           </p>

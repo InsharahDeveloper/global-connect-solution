@@ -7,6 +7,7 @@ import Testimonials from "./../sections/Testimonials"
 import PPageHeading from "../sections/PPageHeading";
 import FeedbackForm from "../sections/FeedBackForm";
 import FeedbackList from "../sections/FeedBackShow";
+import HeaderCarousel from "../sections/HeaderCarousel";
 
 
 
@@ -15,7 +16,8 @@ function ClientProofGallery() {
 
   return (
     <>
-      <div className="home w-full relative">
+      <div className="w-full relative">
+        <HeaderCarousel />
         <Navbar setOpen={setOpen} />
         <PPageHeading/>
 

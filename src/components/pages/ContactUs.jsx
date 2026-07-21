@@ -8,6 +8,7 @@ import Footer from "../sections/Footer";
 import WaMe from "../sections/WaMe";
 import CPageHeading from "../sections/CPageHeading";
 import Newsletter from "../sections/Newsletter";
+import HeaderCarousel from "../sections/HeaderCarousel";
 
 
 function Contact() {
@@ -16,9 +17,10 @@ function Contact() {
   return (
     <>
       <div className="main w-full">
-        <div className="home relative">
-        <CPageHeading/>
+        <HeaderCarousel />
         <Navbar setOpen={setOpen} />
+        <div className="relative">
+        <CPageHeading/>
         <Sidebar open={open} setOpen={setOpen} />
         </div>
         <FAQs />

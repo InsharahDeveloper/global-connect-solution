@@ -37,7 +37,7 @@ function Hero({ scrollToServices }) {
   }, []);
 
   return (
-    <section className="hero w-full max-[320px]:px-2 px-8 sm:px-20 lg:px-20 py-10 max-[913px]:px-0 relative">
+    <section className="hero w-full max-[320px]:px-2 px-8 sm:px-20 -mt-[100px] lg:px-20 py-10 max-[913px]:px-0 relative">
       <div className="grid w-full grid-cols-1 min-[860px]:grid-cols-2 min-[911px]:grid-cols-1 min-[913px]:grid-cols-2 gap-10 items-center 2xl:gap-0">
 
         {/* {Glow} */}

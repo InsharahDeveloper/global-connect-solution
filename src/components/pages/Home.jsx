@@ -14,6 +14,8 @@ import Footer from "../sections/Footer";
 import WaMe from "../sections/WaMe";
 import FeedbackForm from "../sections/FeedBackForm";
 import FeedbackList from "../sections/FeedBackShow";
+import HeaderCarousel from "../sections/HeaderCarousel";
+import PricingSection from "../sections/PricingSection";
 
 
 function Home() {
@@ -30,22 +32,25 @@ function Home() {
   return (
     <>
       <div className="main w-full">
+        <HeaderCarousel />
+        <Navbar setOpen={setOpen} />
         <div className="home relative">
-          <Navbar setOpen={setOpen} />
-          
+
           {/* 👇 pass function to Hero */}
-         <Hero scrollToServices={scrollToServices} />
+          <Hero scrollToServices={scrollToServices} />
 
           <Sidebar open={open} setOpen={setOpen} />
         </div>
 
         <Carousel />
-        <WhyChoose scrollToServices={scrollToServices}/>
+
+        <PricingSection />
 
         {/* 👇 attach ref here */}
         <div ref={servicesRef}>
-  <Services />
-</div>
+          <Services />
+        </div>
+        <WhyChoose scrollToServices={scrollToServices} />
 
         <JoinUs />
         <HowItWorks />
