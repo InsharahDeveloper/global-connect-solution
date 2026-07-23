@@ -745,6 +745,10 @@ body::selection {
   color: var(--lighttext) !important;
 }
 
+.dark-theme .text-blue{
+  color: var(--lightbg) !important;
+}
+
 .dark-theme .how-work .heading-sec {
   color: var(--darktext) !important;
 }

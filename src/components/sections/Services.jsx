@@ -3,6 +3,8 @@ import {
   Globe,
   PhoneCall,
   ArrowRight,
+  CardSim,
+  MessageSquare,
 } from "lucide-react";
 import "../../App.css";
 import { Link } from "react-router-dom";
@@ -13,23 +15,30 @@ function Services() {
       icon: <Globe size={28} />,
       title: "Business Google Voice",
       desc: "Google Voice is a smart solution for professionals who need secure communication and privacy.",
+      countries : ["US" , "Canada" , "Australia" , "UK" , "Germany" , "Europe Countries"]
     },
     {
       icon: <Phone size={28} />,
       title: "Zoom Phone",
       desc: "Zoom Phone offers cloud-based business calling and seamless team connectivity worldwide.",
+       countries : ["US" , "Canada"]
     },
     {
-      icon: <PhoneCall size={28} />,
-      title: "Ring Central",
-      desc: "RingCentral offers unified business calling, messaging, and reliable team communication worldwide.",
+      icon: <CardSim size={28} />,
+      title: "E-SIMS",
+      desc: "A digital SIM that enables instant mobile connectivity without a physical SIM card..",
+      countries : ["US" , "Canada"]
+
     },
     {
-      icon: <PhoneCall size={28} />,
-      title: "Dialer Solutions",
-      desc: "Dialer Solutions offers smart auto-calling, lead management, and efficient business communication systems.",
+      icon: <MessageSquare size={28} />,
+      title: "SMS Software",
+      desc: "Reliable Textnow (Tn) , Textfree (Tf) , and Talkatone (Tk) virtual number solutions for and SMS.",
+      countries : ["ko"]
     },
+
   ];
+
 
   return (
     <section className="w-full py-20 px-6 relative service-div">
@@ -62,6 +71,18 @@ function Services() {
               <p className="text-sm text-gray-200 leading-relaxed mb-4">
                 {service.desc}
               </p>
+             
+             {/* <p className="text-blue font-semibold text-xl">Countries Include : </p>
+              <div className="flex flex-wrap items-center">
+      {service.countries.map((country, index) => (
+    <p
+      key={index}
+      className="px-1"
+    >
+      {country} ,
+    </p>
+  ))}
+  </div> */}
 
               <button className="py-1 px-4 rounded-full border-2 text-white text-sm
                 hover:bg-orange-400 hover:border-orange-400 transition">

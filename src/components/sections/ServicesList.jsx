@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Headphones, Globe, Server, Phone , PhoneCall , MonitorCloud , Mail} from "lucide-react";
+import { Headphones, Globe, Server, Phone , PhoneCall , MonitorCloud , Mail , CardSim, UserRound } from "lucide-react";
 
 function ServicesList() {
   const services = [
@@ -120,45 +120,42 @@ function ServicesList() {
       order_message: "Hello! I want to buy Google Voice Personal for USA."
     },
     {
-      id: "w_num",
-      icon: Phone,
-      title: "Whatsapp Number",
-      price: "$8 One time pay",
-      warranty: "No Warranty after successfull login.",
-      advantages: [
-        "You get a secure number for your WhatsApp setup",
-        "We have numbers available for over 180 countries.",
-        "We can provide numbers in large quantities if needed.",
-      ],
-      order_message: "Hello! I want to buy Whatsapp number for -------- country."
-    },
-    {
-      id: "Ooma",
-      icon: Globe,
-      title: "Ooma Software",
-      definition : "Ooma is a cloud-based VoIP phone system software designed for businesses. It provides calling, messaging, virtual numbers, and team communication tools for modern companies.",
-      position : "Out of Stock"
-    },
-    {
-      id: "Ringcentral",
-      icon: PhoneCall,
-      title: "Ring Central",
-      definition : "RingCentral is a cloud-based business communication platform that offers voice calls, video meetings, messaging, and contact center solutions for companies of all sizes.",
-      position : "Out of Stock"
-    },
-    {
-      id: "8X8",
-      icon: Globe,
-      title: "8X8",
-      definition : "8x8 is a cloud-based business communication platform that provides voice calling, video meetings, messaging, and contact center solutions for companies worldwide.",
-      position : "Out of Stock"
-    },
-    {
       id: "zoomphone",
       icon: Phone,
       title: "Zoom Phone",
       definition : "Zoom Phone is a cloud-based VoIP business phone system by Zoom that offers voice calling, SMS, call routing, and unified communication for modern businesses.",
-      position : "Out of Stock"
+       countries: [
+        {
+          name: "USA & Canada",
+          price: "$50/monthly",
+          warranty: "15 days replacement warrant. If any issue occurs we will resolve it or replace the account.",
+          advantages: [
+            "Supports 1-5 users.",
+            "Unlimited inbound and outbound calling.",
+            "First Login then Payment.",
+          ],
+          order_message: "Hello! I want to buy Zoom Phone."
+        },
+      ],
+    },
+    {
+      id: "esim",
+      icon: CardSim,
+      title: "E-sim",
+      definition : "eSIM is a digital SIM that lets you activate a mobile network without a physical SIM card, offering fast setup, flexibility, and support for multiple carriers.",
+       countries: [
+        {
+          name: "USA & Canada",
+          price: "$50/monthly",
+          warranty: "15 days replacement warrant. If any issue occurs we will resolve it or replace the account.",
+          advantages: [
+            "Supports 1-5 users.",
+            "Unlimited inbound and outbound calling.",
+            "First Login then Payment.",
+          ],
+          order_message: "Hello! I want to buy E-Sim."
+        },
+      ],
     },
     {
       id: "textnow",
@@ -203,6 +200,56 @@ function ServicesList() {
       ],
       order_message: "Hello! I want to buy textfree"
     },
+    {
+      id: "w_num",
+      icon: Phone,
+      title: "Whatsapp Number",
+      price: "$8 One time pay",
+      warranty: "No Warranty after successfull login.",
+      advantages: [
+        "You get a secure number for your WhatsApp setup",
+        "We have numbers available for over 180 countries.",
+        "We can provide numbers in large quantities if needed.",
+      ],
+      order_message: "Hello! I want to buy Whatsapp number for -------- country."
+    },
+    {
+      id: "s_acc",
+      icon: UserRound,
+      title: "Social Acccounts",
+      price: "Depends On Requirements",
+      warranty: "No Warranty after successfull login.",
+      Includes: [
+        "FaceBook",
+        "Instagram",
+        "Linkedin",
+        "Many More",
+
+      ],
+      order_message: "Hello! I want to buy Whatsapp number for -------- country."
+    },
+    {
+      id: "Ooma",
+      icon: Globe,
+      title: "Ooma Software",
+      definition : "Ooma is a cloud-based VoIP phone system software designed for businesses. It provides calling, messaging, virtual numbers, and team communication tools for modern companies.",
+      position : "Out of Stock"
+    },
+    {
+      id: "Ringcentral",
+      icon: PhoneCall,
+      title: "Ring Central",
+      definition : "RingCentral is a cloud-based business communication platform that offers voice calls, video meetings, messaging, and contact center solutions for companies of all sizes.",
+      position : "Out of Stock"
+    },
+    {
+      id: "8X8",
+      icon: Globe,
+      title: "8X8",
+      definition : "8x8 is a cloud-based business communication platform that provides voice calling, video meetings, messaging, and contact center solutions for companies worldwide.",
+      position : "Out of Stock"
+    },
+
   ];
 
   // ✅ FIXED INITIAL STATE
@@ -210,11 +257,14 @@ function ServicesList() {
   const [selectedCountryIndex, setSelectedCountryIndex] = useState(0);
 
   const isGVBusiness = selectedService.id === "gv_business";
-  const isOutOfStock = selectedService.position === "Out of Stock";
+    const isZoomPhone = selectedService.id === "zoomphone";
+
+    const isEsim = selectedService.id === "esim";
+    const isOutOfStock = selectedService.position === "Out of Stock";
   const Icon = selectedService.icon;
 
   // ✅ SAFE ACTIVE DATA
-  const activeData = isGVBusiness
+  const activeData = isGVBusiness | isZoomPhone | isEsim
     ? selectedService.countries?.[selectedCountryIndex]
     : selectedService;
 
@@ -312,6 +362,42 @@ function ServicesList() {
                     ))}
                   </div>
                 )}
+                {isZoomPhone && (
+                  <div className="flex gap-4 flex-wrap mb-6">
+                    {selectedService.countries.map((c, i) => (
+                      <button
+                        key={c.name}
+                        onClick={() => setSelectedCountryIndex(i)}
+                        className={`px-4 py-1 rounded-full border-2 font-semibold
+                        ${
+                          selectedCountryIndex === i
+                            ? "bg-orange-400 text-white scale-[1.2]"
+                            : "bg-none"
+                        }`}
+                      >
+                        {c.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                {isEsim && (
+                  <div className="flex gap-4 flex-wrap mb-6">
+                    {selectedService.countries.map((c, i) => (
+                      <button
+                        key={c.name}
+                        onClick={() => setSelectedCountryIndex(i)}
+                        className={`px-4 py-1 rounded-full border-2 font-semibold
+                        ${
+                          selectedCountryIndex === i
+                            ? "bg-orange-400 text-white scale-[1.2]"
+                            : "bg-none"
+                        }`}
+                      >
+                        {c.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
 
                 {/* OTHERS COUNTRIES */}
                 {activeData.name === "Others" &&
@@ -350,6 +436,14 @@ function ServicesList() {
 
                   <ul className="list-disc ml-5">
                     {activeData.advantages?.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+
+                  <h4 className="font-semibold mb-2">Inccludes:</h4>
+
+                  <ul className="list-disc ml-5">
+                    {activeData.Includes?.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
                   </ul>
