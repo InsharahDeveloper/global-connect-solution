@@ -14,26 +14,26 @@ function Services() {
     {
       icon: <Globe size={28} />,
       title: "Business Google Voice",
-      desc: "Google Voice is a smart solution for professionals who need secure communication and privacy.",
+      desc: "Secure Business Google Voice solutions with virtual phone numbers, call management, and reliable communication for businesses.",
       countries : ["US" , "Canada" , "Australia" , "UK" , "Germany" , "Europe Countries"]
     },
     {
       icon: <Phone size={28} />,
       title: "Zoom Phone",
-      desc: "Zoom Phone offers cloud-based business calling and seamless team connectivity worldwide.",
+      desc: "Cloud-based Zoom Phone solutions for professional business calling and seamless team communication.",
        countries : ["US" , "Canada"]
     },
     {
       icon: <CardSim size={28} />,
       title: "E-SIMS",
-      desc: "A digital SIM that enables instant mobile connectivity without a physical SIM card..",
+      desc: "Business eSIM services with instant activation for global mobile connectivity.",
       countries : ["US" , "Canada"]
 
     },
     {
       icon: <MessageSquare size={28} />,
       title: "SMS Software",
-      desc: "Reliable Textnow (Tn) , Textfree (Tf) , and Talkatone (Tk) virtual number solutions for and SMS.",
+      desc: "Business SMS software including TextNow, TextFree, and Talkatone for messaging and virtual communication.",
       countries : ["ko"]
     },
 
@@ -84,12 +84,10 @@ function Services() {
   ))}
   </div> */}
 
-              <button className="py-1 px-4 rounded-full border-2 text-white text-sm
+                  <Link to="/services" className="py-1 px-4 rounded-full border-2 text-white text-sm
                 hover:bg-orange-400 hover:border-orange-400 transition">
-                  <Link to="/services">
-                Explore More
+Explore Business Services
                 </Link>
-              </button>
             </div>
           ))}
 
@@ -97,17 +95,16 @@ function Services() {
 
         {/* RIGHT SIDE - HEADING */}
         <div className="w-full self-center flex flex-col text-left order-2 lg:order-2">
-          <h1 data-aos="zoom-in-right" className="max-[320px]:text-[1.4rem] max-[390px]:text-[1.8rem] text-[2.2rem] md:text-[3rem] 2xl:text-6xl font-[Montserrat] font-bold">
+          <h2 data-aos="zoom-in-right" className="max-[320px]:text-[1.4rem] max-[390px]:text-[1.8rem] text-[2.2rem] md:text-[3rem] 2xl:text-6xl font-[Montserrat] font-bold">
 
-            Our <span className="text-orange-400">Services</span>
-          </h1>
+             Business Communication <span className="text-orange-400">Services</span>
+          </h2>
 
           <p
             data-aos="fade-up"
             className="text-gray-500 text-[1.1rem] mt-4 max-w-xl 2xl:text-2xl"
           >
-            At Global Connect Solutions, we specialize in providing premium communication services designed for secure, reliable, and global connectivity. Our featured services include Google Voice, Zoom Phone, and RingCentral, built to help businesses communicate efficiently and grow without limits.
-          </p>
+At Global Connect Solution, we provide Business Google Voice, VoIP Solutions, Zoom Phone, Business SMS, eSIM Services , Social Account , Gmail Accounts and Virtual Phone Numbers for professionals and businesses worldwide. Our secure communication solutions are designed for reliable connectivity, fast setup, and long-term business growth.          </p>
           <p
             data-aos="fade-up"
             className="text-gray-500 text-[1.1rem] mt-4 max-w-xl 2xl:text-2xl"
@@ -127,7 +124,7 @@ function Services() {
             hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)]
             transition-all duration-300"
           >
-           <h3 className="text-xl font-bold px-4 py-2">See More</h3>
+           <h3 className="text-xl font-bold px-4 py-2">View All Services</h3>
           </Link>
 
         </div>

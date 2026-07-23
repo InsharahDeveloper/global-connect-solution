@@ -10,18 +10,18 @@ function Hero_Text({ scrollToServices }) {
         <span>|</span>
         <span>🔐 Safe Service</span>
         <span>|</span>
-        <span>⚡ Fast Support</span>
+        <span>⚡ Fast Delivery</span>
       </div>
 
-      <h1 data-aos="fade-right" className="font-[Montserrat] font-bold leading-tight text-2xl sm:text-5xl 2xl:text-[4rem] hero-heading">
-        Powering Your
+      <h1 data-aos="fade-right" className="font-[Montserrat] font-bold leading-tight text-2xl sm:text-4xl 2xl:text-[3rem] hero-heading">
+        Business Google Voice &
         <span className="block text-1xl sm:text-4xl mt-2 2xl:text-[4rem]">
-          <span className="orange">Global</span> Connectivity
+          <span className="orange"> VoIP Solutions </span> for Global Businesses
         </span>
       </h1>
 
       <p data-aos="fade-right" className="text-gray-500 2xl:text-2xl 2xl:max-w-5xl text-sm sm:text-[1.4rem] lg:text-lg max-w-xl mx-auto min[913]:mx-0 2xl:mx-0">
-        Premium Google Voice, Gmail, eSIM & Digital Services trusted by clients worldwide.
+Get Business Google Voice, VoIP Solutions, Virtual Phone Numbers, and eSIM Services with fast setup, secure activation, and reliable worldwide support
       </p>
 
       <Buttons scrollToServices={scrollToServices}/>

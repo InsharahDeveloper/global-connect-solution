@@ -4,6 +4,7 @@ import {
   Send,
   MessageCircle,
   ArrowUp,
+  Heading2Icon,
 } from "lucide-react";
 import lightlogo from "../../assets/herosection/light_logo.png"
 import darklogo from "../../assets/herosection/logo.png"
@@ -39,10 +40,10 @@ function Footer() {
 
         {/* BRAND */}
         <div>
-          <h1 data-aos="zoom-in-up" className="text-2xl font-bold flex gap-1 items-center justify-start">
+          <h2 data-aos="zoom-in-up" className="text-2xl font-bold flex gap-1 items-center justify-start">
             <div className="logo"><img src={darkMode ? darklogo : lightlogo} alt="" className="w-15" /></div>
             <div className="">Global <span className="text-orange-400">Connect </span>Solution</div>
-          </h1>
+          </h2>
           <p data-aos="zoom-in-up" className="text-gray-400 mt-4 leading-6 text-[1.1rem]">
             Your trusted partner for premium digital services. We provide fast,
             secure and reliable solutions for your business.
@@ -51,7 +52,7 @@ function Footer() {
 
         {/* QUICK LINKS */}
         <div>
-          <h2 data-aos="zoom-in-up" className="text-2xl font-semibold mb-4">Quick Links</h2>
+          <h3 data-aos="zoom-in-up" className="text-2xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-3 text-gray-400">
             <Link to="/"><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer footer-navs w-[fit-content] hover:ms-3 text-[1.1rem]">Home</li></Link>
             <Link to=""><li data-aos="zoom-in-up" className="hover:text-orange-400 cursor-pointer footer-navs w-[fit-content] hover:ms-3 text-[1.1rem]">Services</li></Link>
@@ -66,7 +67,7 @@ function Footer() {
 
         {/* CONTACT */}
         <div>
-          <h2 data-aos="zoom-in-up" className="text-2xl font-semibold mb-4">Contact</h2>
+          <h3 data-aos="zoom-in-up" className="text-2xl font-semibold mb-4">Contact</h3>
 
           <div className="space-y-4 text-gray-400">
 

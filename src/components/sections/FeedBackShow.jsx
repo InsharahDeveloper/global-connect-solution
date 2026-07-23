@@ -27,7 +27,7 @@ function FeedbackSlider() {
   }, []);
 
   return (
-    <section className="py-20 px-6 lg:px-16 relative overflow-hidden">
+    <section aria-labelledby="client-feedback" className="py-20 px-6 lg:px-16 relative overflow-hidden">
 
       {/* Heading */}
       <div className="text-center mb-14">
@@ -37,10 +37,13 @@ function FeedbackSlider() {
 
         <h2 className="text-4xl md:text-5xl font-bold relative inline-block">
           Clients <span className="orange">Feedback</span>
-          <span className="absolute left-0 top-0 text-6xl md:text-7xl font-bold text-white/5 -z-10">
+          <span className="absolute left-0 top-0 text-6xl md:text-7xl font-bold text-orange-400/5 -z-10">
             Testimonials
           </span>
         </h2>
+        <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+  Read genuine customer reviews about our Business Google Voice, VoIP, Zoom Phone, eSIM, and digital communication services.
+</p>
       </div>
 
       {/* Custom Arrows */}

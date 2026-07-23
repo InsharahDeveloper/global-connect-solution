@@ -163,18 +163,17 @@ export default function PricingSection() {
         {/* Header */}
         <div className="text-center max-w-7xl mx-auto mb-14">
           <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-[Poppins] font-bold leading-tight mb-3 2xl:text-6xl text-blue heading-sec">
-            Pricing <span className="orange">Section</span>
+             <span className="orange">Pricing</span>
           </h2>
           <p data-aos="fade-up" className="text-gray-500 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl">
-            Global Connectivity Within Your Budget.
-          </p>
+Compare our Business Google Voice, VoIP, and Zoom Phone pricing plans for individuals and businesses.          </p>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-5">
           {/* CARD 1 — GV Personal */}
           <CardShell
             topBar="bg-orange-400"
-            badge="GV Personal USA"
+            badge="Personal Google Voice"
             badgeColor="text-orange-400"
             iconWrap="bg-orange-400/10"
             height={`h-[380px]`}
@@ -194,7 +193,7 @@ export default function PricingSection() {
             </ul>
             <a href="https://wa.me/+923000584969?text=I want to buy Google Voice Personal" target="_blank" rel="noreferrer">
               <button className="w-full rounded-lg bg-orange-400 py-2.5 text-[13.5px] font-semibold text-slate-950 transition hover:bg-orange-500">
-                Get GV Personal
+                Buy Personal Google Voice
               </button>
             </a>
           </CardShell>
@@ -202,7 +201,7 @@ export default function PricingSection() {
           {/* CARD 2 — GV Business (country selector with dynamic features) */}
           <CardShell
             topBar="bg-orange-400"
-            badge="GV Business"
+            badge="Business Google Voice"
             badgeColor="text-orange-400"
             iconWrap="bg-orange-400/10"
             icon={<Building2 size={19} className="text-orange-400" />}
@@ -264,7 +263,7 @@ export default function PricingSection() {
             </ul>
               <a href={`https://wa.me/+923000584969?text=I want to buy Google Voice Business "${country.name}" `} target="_blank" rel="noreferrer">
              <button className="w-full rounded-lg bg-orange-400 py-2.5 text-[13.5px] font-semibold text-slate-950 transition hover:bg-orange-300">
-              Get GV Business
+              Buy Business Google Voice
             </button>
             </a>
    
@@ -273,7 +272,7 @@ export default function PricingSection() {
           {/* CARD 3 — Zoom Dialer */}
           <CardShell
             topBar="bg-orange-400"
-            badge="Zoom Dialer"
+            badge="Zoom Phone"
             badgeColor="text-orange-400"
             iconWrap="bg-orange-400/10"
             height={`h-[420px]`}
@@ -295,7 +294,7 @@ export default function PricingSection() {
             </ul>
            <a href={`https://wa.me/+923000584969?text=I want to buy Zoom Phone `} target="_blank" rel="noreferrer">
             <button className="w-full rounded-lg bg-orange-400 py-2.5 text-[13.5px] font-semibold text-slate-950 transition hover:bg-orange-500">
-              Get Zoom Dialer
+              Buy Zoom Phone
             </button>
             </a>
           </CardShell>

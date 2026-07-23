@@ -6,25 +6,25 @@ function HowItWorks() {
       id: "01",
       icon: <Search size={35} />,
       title: "Choose Service",
-      desc: "Select the premium digital service that fits your business needs.",
+      desc: "Choose Business Google Voice, VoIP Solutions, eSIM, Business SMS, or Virtual Phone Numbers based on your needs.",
     },
     {
       id: "02",
       icon: <MessageCircle size={35} />,
       title: "Contact Us",
-      desc: "Reach out through WhatsApp or Telegram for quick support.",
+      desc: "Contact our team on WhatsApp for quick consultation and order confirmation.",
     },
     {
       id: "03",
       icon: <CreditCard size={35} />,
       title: "Secure Payment",
-      desc: "Make payment through trusted and easy payment methods.",
+      desc: "Complete your payment securely using our trusted payment methods.",
     },
     {
       id: "04",
       icon: <CheckCircle size={35} />,
       title: "Instant Delivery",
-      desc: "Receive your service quickly with full support guarantee.",
+      desc: "Receive your Business Google Voice or selected service with fast activation and dedicated support.",
     },
   ];
 
@@ -42,11 +42,14 @@ function HowItWorks() {
         </p>
 
         <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-[Poppins] font-bold leading-tight mb-3 2xl:text-6xl text-blue heading-sec">
-          Easy & <span className="orange">Fast</span>  Process
+          <h2>
+  How to Get Business
+
+</h2><span className="orange"> Google Voice &</span> VoIP Services
         </h2>
 
         <p data-aos="fade-up" className="text-gray-500 font-[Inter] mt-3 max-w-2xl mx-auto 2xl:text-2xl">
-          We make everything simple, secure, and fast so you can grow without delays.
+Get Business Google Voice, VoIP Solutions, Virtual Phone Numbers, and eSIM services in four simple steps with secure setup, fast delivery, and reliable customer support.
         </p>
       </div>
 

@@ -71,16 +71,16 @@ function JoinUs() {
           </p>
 
           <h2 data-aos="fade-right" className="text-3xl md:text-5xl font-[Poppins] font-bold leading-tight mb-3 text-white 2xl:text-6xl">
-            Join Us & Grow Together
+<h2>
+  Grow Your Business with Global Connect Solution
+</h2>
           </h2>
 
           <p data-aos="fade-up" className="mb-8 md:max-w-[70%] mx-auto text-gray-200 font-[Inter] 2xl:text-2xl">
-            Become part of a trusted network built on premium digital services,
-            fast support, and long-term opportunities. Let’s grow your business
-            with confidence.
+           Join thousands of businesses using Business Google Voice, VoIP Solutions, Virtual Phone Numbers, eSIM Services, and Business SMS with fast setup, secure activation, and reliable worldwide support.
           </p>
 
-          <a data-aos="zoom-out-up" href="https:\\wa.me\+923000584969" target="_blank"><button className="px-7 py-2 rounded-full btn transition text-[1.1rem] 2xl:text-2xl 2xl:font-bold 2xl:py-4">
+          <a data-aos="zoom-out-up" href="https://wa.me/+923000584969" target="_blank"><button className="px-7 py-2 rounded-full btn transition text-[1.1rem] 2xl:text-2xl 2xl:font-bold 2xl:py-4">
             <span className="relative">Chat On Whatsapp</span>
           </button></a>
         </div>

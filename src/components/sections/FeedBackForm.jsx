@@ -40,7 +40,7 @@ function FeedbackForm() {
       if (response.ok) {
         setPopup({
           show: true,
-          message: "Feedback submitted successfully!",
+          message: "Your review has been submitted successfully.",
           type: "success",
         });
         setForm({
@@ -65,7 +65,7 @@ function FeedbackForm() {
     setLoading(false);
   };
   return (
-    <section className="py-16 px-6 lg:px-20 relative">
+    <section  aria-labelledby="feedback-form" className="py-16 px-6 lg:px-20 relative">
       <div className="glow absolute top-0 left-0 w-[300px] h-[300px] bg-orange-400/20 blur-[130px] rounded-full hidden sm:block"></div>
       <div className="glow absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/30 blur-[130px] rounded-full"></div>
 
@@ -99,11 +99,11 @@ function FeedbackForm() {
         <div className="text-center lg:text-left  lg:h-full flex justify-center flex-col">
 
           <h2 data-aos="fade-up" className="text-3xl md:text-5xl font-bold leading-tight">
-            Drop <span className="orange">Your</span> Feedback
+              Share Your <span className="orange">Experience with</span> Global Connect Solution 
           </h2>
 
           <p data-aos="fade-right" className="text-gray-400 mt-4 text-lg">
-            Got a minute? We’d love to hear what you think! Your feedback helps us make things better for you.
+Share your experience with our Business Google Voice, Zoom Phone, eSIM, VoIP, or SMS services. Your feedback helps us improve and assists future customers.
           </p>
 
         </div>
@@ -146,6 +146,9 @@ function FeedbackForm() {
                 placeholder=" "
                 className="peer  2xl:text-2xl w-full px-4 py-4 rounded-xl bg-transparent border border-gray-300 t-blue outline-none focus:border-orange-400"
               />
+              <p className="text-xs text-gray-500 mt-2">
+  We respect your privacy. Your email address will never be shared publicly.
+</p>
 
               <label
                 className="absolute left-4 top-5 2xl:top-8 2xl:text-2xl  -translate-y-1/2 px-2 text-gray-400 transition-all duration-300

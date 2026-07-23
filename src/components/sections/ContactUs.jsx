@@ -42,7 +42,7 @@ function ContactUs() {
 
 
   return (
-    <section className="w-full px-4 sm:px-6 md:px-10 lg:px-20 py-16 cs relative">
+    <section aria-labelledby="contact-us" className="w-full px-4 sm:px-6 md:px-10 lg:px-20 py-16 cs relative">
 
       <div className="glow absolute top-0 left-0 w-[300px] h-[300px] bg-orange-500/30 blur-[130px] rounded-full  hidden sm:block"></div>
       <div className="glow absolute bottom-0 right-0 w-[300px] h-[300px] bg-orange-400/40 blur-[130px] rounded-full"></div>
@@ -51,10 +51,10 @@ function ContactUs() {
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 data-aos="fade-right" className="text-3xl sm:text-4xl md:text-5xl font-bold 2xl:text-6xl ">
-          Contact <span className="orange">Us</span>
+          Contact <span className="orange">Global Connect Solution</span>
         </h2>
         <p data-aos="fade-up" className="mt-3 text-sm sm:text-base text-gray-500 max-w-2xl mx-auto 2xl:text-2xl 2xl:max-w-5xl">
-          Have questions or ready to place an order? Our support team is here to help you anytime.
+Need Business Google Voice, Zoom Phone, eSIM, VoIP, or SMS Software? Contact Global Connect Solution for fast support, pricing, and secure worldwide service.
         </p>
       </div>
 
@@ -76,7 +76,11 @@ function ContactUs() {
               </div>
               <div>
                 <p className="text-sm text-gray-400 2xl:text-xl ptf-name">WhatsApp</p>
-                <p className="text-white font-medium  text-blue 2xl:text-xl ptf-info">+92 300 0584969</p>
+                <p className="text-white font-medium  text-blue 2xl:text-xl ptf-info"><a href="https://wa.me/923000584969"
+                target="_blank"
+                rel="noopener noreferrer">
+  +92 300 0584969
+</a></p>
               </div>
             </div>
 
@@ -86,7 +90,10 @@ function ContactUs() {
               </div>
               <div>
                 <p className="text-sm text-gray-400 2xl:text-xl ptf-name">Email</p>
-                <p className="text-white font-medium text-blue 2xl:text-xl ptf-info">contact@globalconnectsolution.store</p>
+                <p className="text-white font-medium text-blue 2xl:text-xl ptf-info"><a href="mailto:contact@globalconnectsolution.store" target="_blank"
+                rel="noopener noreferrer">
+  contact@globalconnectsolution.store
+</a></p>
               </div>
             </div>
 

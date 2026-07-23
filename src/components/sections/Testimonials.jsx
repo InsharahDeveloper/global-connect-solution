@@ -60,12 +60,11 @@ function Testimonials() {
       {/* Heading */}
       <div className="text-center mb-10 sm:mb-14 relative z-10">
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-[Poppins]">
-          Clients <span className="text-orange-400">Proof</span> Gallery
+          Clients <span className="text-orange-400">Success Stories & </span> Testimonials
         </h2>
 
         <p className="text-gray-500 mt-3 max-w-2xl mx-auto text-sm sm:text-base">
-          Trusted by clients worldwide with verified results.
-        </p>
+Explore verified client testimonials and successful Business Google Voice, VoIP Solutions, and virtual phone number deliveries from customers worldwide.        </p>
       </div>
 
 
@@ -113,7 +112,7 @@ function Testimonials() {
 <div className="relative overflow-hidden h-[600px] sm:h-[580px] md:h-[600px] lg:h-[550px]">
                 <img
                   src={item.img}
-                  alt={item.title}
+                  alt={`${item.title} - Global Connect Solution Client Testimonial`}
 className="w-full h-full object-cover group-hover:scale-110 transition duration-700"                />
 
                 {/* Overlay */}
