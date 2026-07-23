@@ -45,9 +45,10 @@ function Home() {
     <link
       rel="canonical"
       href="https://globalconnectsolution.store/"
-
-
     />
+
+    <meta name="google-site-verification" content="nPZcwHirif-PEVd51Cey19SK7_yyP6WmHL4qjfd97TM" />
+
 
 
 
